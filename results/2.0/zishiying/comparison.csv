@@ -1,0 +1,2 @@
+mode,best_epoch,mae,rmse,mape,valid_count,mape_count,smoke_only
+adaptive,77,9.476719562867906,15.866602858478192,0.09889121879506968,415617,413979,False

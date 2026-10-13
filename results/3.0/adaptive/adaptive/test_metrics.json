@@ -1,0 +1,25 @@
+{
+  "overall": {
+    "mae": 9.446877517964808,
+    "rmse": 15.833344501040427,
+    "mape": 0.09775136559842618,
+    "valid_count": 415617,
+    "mape_count": 413979
+  },
+  "by_horizon": [
+    {
+      "horizon": 1,
+      "mae": 9.446877517964808,
+      "rmse": 15.833344501040427,
+      "mape": 0.09775136559842618,
+      "valid_count": 415617,
+      "mape_count": 413979
+    }
+  ],
+  "best_epoch": 88,
+  "best_validation_mae": 9.487210338303289,
+  "smoke_only": false,
+  "target_offsets": [
+    1
+  ]
+}

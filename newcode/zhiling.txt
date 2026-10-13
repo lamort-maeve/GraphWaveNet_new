@@ -1,0 +1,34 @@
+# 当前默认：paper 内部滞后图传播；原版自适应不改；联合从头端到端训练。
+# 路径按服务器实际情况核实，尤其 data/data1 与 per_window。
+# 旧架构检查点不兼容；首次训练请使用新的 run-name。
+# 一、全监督三模式（不需要预训练模型）
+python /root/autodl-tmp/GraphWaveNet/newcode/train.py --architecture paper --device cuda:0 --gpus 1 --data /root/autodl-tmp/GraphWaveNet/data/data1 --raw /root/autodl-tmp/GraphWaveNet/data/data1/full_year_cleaned.npz --graphs /root/autodl-tmp/GraphWaveNet/per_window --output /root/autodl-tmp/GraphWaveNet/result/paper --cache-dir /root/autodl-tmp/GraphWaveNet/newcode/cache --context 25 --epochs 100 --patience 0 --batch-size 16 --workers 6 --learning-rate 0.001 --seed 42 --trusted-object-metadata --mode all --label-ratio 1 --run-name full_s42
+
+# 二、25%监督预算，三模式监督基线（A/B及仅因果）
+python /root/autodl-tmp/GraphWaveNet/newcode/train.py --architecture paper --device cuda:0 --gpus 1 --data /root/autodl-tmp/GraphWaveNet/data/data1 --raw /root/autodl-tmp/GraphWaveNet/data/data1/full_year_cleaned.npz --graphs /root/autodl-tmp/GraphWaveNet/per_window --output /root/autodl-tmp/GraphWaveNet/result/paper --cache-dir /root/autodl-tmp/GraphWaveNet/newcode/cache --context 25 --epochs 100 --patience 0 --batch-size 16 --workers 6 --learning-rate 0.001 --seed 42 --trusted-object-metadata --mode all --label-ratio 0.25 --run-name supervised25_s42
+
+# 三、同样25%监督预算，三模式半监督（C/D及仅因果）
+python /root/autodl-tmp/GraphWaveNet/newcode/train.py --architecture paper --device cuda:0 --gpus 1 --data /root/autodl-tmp/GraphWaveNet/data/data1 --raw /root/autodl-tmp/GraphWaveNet/data/data1/full_year_cleaned.npz --graphs /root/autodl-tmp/GraphWaveNet/per_window --output /root/autodl-tmp/GraphWaveNet/result/paper --cache-dir /root/autodl-tmp/GraphWaveNet/newcode/cache --context 25 --epochs 100 --patience 0 --batch-size 16 --workers 6 --learning-rate 0.001 --seed 42 --trusted-object-metadata --mode all --label-ratio 0.25 --semi-supervised --ssl-weight 0.1 --ssl-warmup 10 --ema-decay 0.99 --input-noise 0.02 --run-name ssl25_s42
+
+# 四、单独训练三种模式，保持其他参数一致
+python /root/autodl-tmp/GraphWaveNet/newcode/train.py --architecture paper --device cuda:0 --gpus 1 --data /root/autodl-tmp/GraphWaveNet/data/data1 --raw /root/autodl-tmp/GraphWaveNet/data/data1/full_year_cleaned.npz --graphs /root/autodl-tmp/GraphWaveNet/per_window --output /root/autodl-tmp/GraphWaveNet/result/paper --cache-dir /root/autodl-tmp/GraphWaveNet/newcode/cache --context 25 --epochs 100 --patience 0 --batch-size 16 --workers 6 --learning-rate 0.001 --seed 42 --trusted-object-metadata --mode adaptive --label-ratio 1 --run-name adaptive_full_s42
+python /root/autodl-tmp/GraphWaveNet/newcode/train.py --architecture paper --device cuda:0 --gpus 1 --data /root/autodl-tmp/GraphWaveNet/data/data1 --raw /root/autodl-tmp/GraphWaveNet/data/data1/full_year_cleaned.npz --graphs /root/autodl-tmp/GraphWaveNet/per_window --output /root/autodl-tmp/GraphWaveNet/result/paper --cache-dir /root/autodl-tmp/GraphWaveNet/newcode/cache --context 25 --epochs 100 --patience 0 --batch-size 16 --workers 6 --learning-rate 0.001 --seed 42 --trusted-object-metadata --mode causal --label-ratio 1 --run-name causal_full_s42
+python /root/autodl-tmp/GraphWaveNet/newcode/train.py --architecture paper --device cuda:0 --gpus 1 --data /root/autodl-tmp/GraphWaveNet/data/data1 --raw /root/autodl-tmp/GraphWaveNet/data/data1/full_year_cleaned.npz --graphs /root/autodl-tmp/GraphWaveNet/per_window --output /root/autodl-tmp/GraphWaveNet/result/paper --cache-dir /root/autodl-tmp/GraphWaveNet/newcode/cache --context 25 --epochs 100 --patience 0 --batch-size 16 --workers 6 --learning-rate 0.001 --seed 42 --trusted-object-metadata --mode combined --label-ratio 1 --run-name combined_full_s42
+
+# 五、因果图消融：相同监督预算、模型模式和种子；dynamic是默认。
+python /root/autodl-tmp/GraphWaveNet/newcode/train.py --architecture paper --device cuda:0 --gpus 1 --data /root/autodl-tmp/GraphWaveNet/data/data1 --raw /root/autodl-tmp/GraphWaveNet/data/data1/full_year_cleaned.npz --graphs /root/autodl-tmp/GraphWaveNet/per_window --output /root/autodl-tmp/GraphWaveNet/result/paper --cache-dir /root/autodl-tmp/GraphWaveNet/newcode/cache --context 25 --epochs 100 --patience 0 --batch-size 16 --workers 6 --learning-rate 0.001 --seed 42 --trusted-object-metadata --mode combined --label-ratio 0.25 --graph-control static --run-name combined_static_25_s42
+python /root/autodl-tmp/GraphWaveNet/newcode/train.py --architecture paper --device cuda:0 --gpus 1 --data /root/autodl-tmp/GraphWaveNet/data/data1 --raw /root/autodl-tmp/GraphWaveNet/data/data1/full_year_cleaned.npz --graphs /root/autodl-tmp/GraphWaveNet/per_window --output /root/autodl-tmp/GraphWaveNet/result/paper --cache-dir /root/autodl-tmp/GraphWaveNet/newcode/cache --context 25 --epochs 100 --patience 0 --batch-size 16 --workers 6 --learning-rate 0.001 --seed 42 --trusted-object-metadata --mode combined --label-ratio 0.25 --graph-control shuffled --run-name combined_shuffled_25_s42
+python /root/autodl-tmp/GraphWaveNet/newcode/train.py --architecture paper --device cuda:0 --gpus 1 --data /root/autodl-tmp/GraphWaveNet/data/data1 --raw /root/autodl-tmp/GraphWaveNet/data/data1/full_year_cleaned.npz --graphs /root/autodl-tmp/GraphWaveNet/per_window --output /root/autodl-tmp/GraphWaveNet/result/paper --cache-dir /root/autodl-tmp/GraphWaveNet/newcode/cache --context 25 --epochs 100 --patience 0 --batch-size 16 --workers 6 --learning-rate 0.001 --seed 42 --trusted-object-metadata --mode combined --label-ratio 0.25 --graph-control collapsed --run-name combined_collapsed_25_s42
+python /root/autodl-tmp/GraphWaveNet/newcode/train.py --architecture paper --device cuda:0 --gpus 1 --data /root/autodl-tmp/GraphWaveNet/data/data1 --raw /root/autodl-tmp/GraphWaveNet/data/data1/full_year_cleaned.npz --graphs /root/autodl-tmp/GraphWaveNet/per_window --output /root/autodl-tmp/GraphWaveNet/result/paper --cache-dir /root/autodl-tmp/GraphWaveNet/newcode/cache --context 25 --epochs 100 --patience 0 --batch-size 16 --workers 6 --learning-rate 0.001 --seed 42 --trusted-object-metadata --mode combined --label-ratio 0.25 --graph-control local --run-name combined_local_25_s42
+
+# --mode adaptive 不读取PCMCI，不使用graph-control。
+# static为首个可用图固定，不是全年图平均；shuffled打乱源身份；collapsed合并滞后；local使用自身滞后。
+# 五种seed建议42/43/44/45/46；各seed所有方法必须一致，run-name也要修改。
+# 监督预算10%/25%/50%分别用0.1/0.25/0.5；100%不启用semi-supervised。
+# 半监督协议为历史观测可用、预测样本监督预算有限，不能解释为传感器缺失。
+# 参数仅为统一起点，最佳超参数用验证集选择；不要按测试集选图阈值。
+# 恢复训练：在原命令末尾加 --resume，保持同一run-name和模型/SSL配置。
+# 快速检查：在原命令添加 --smoke --batch-size 2 --workers 0 并改用新的run-name。
+# 输出：OUTPUT/runs/RUN_NAME/{adaptive,causal,combined}/best.pt,last.pt,config.json,history.csv,test_metrics.json,test_predictions.npz；根目录comparison.csv。
+# 不复制source。checkpoint包含训练状态，best.pt是验证集选择的已训练模型，不是外部预训练权重。
+# 当前split的y_offsets决定预测步长；本命令不更改数据集的预测范围。

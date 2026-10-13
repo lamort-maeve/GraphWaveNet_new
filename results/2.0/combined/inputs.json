@@ -1,0 +1,20 @@
+{
+  "raw": {
+    "path": "/root/autodl-tmp/GraphWaveNet/data/data1/full_year_cleaned.npz",
+    "sha256": "8e998c7ba25920fdc026841a0ff986adf7f2a219fd53a3bee76b0f936f55cda6"
+  },
+  "splits": {
+    "train": {
+      "path": "/root/autodl-tmp/GraphWaveNet/data/data1/train.npz",
+      "sha256": "ce770e0361f8f47aff469ca624c43fd738db946ba703a19b2333d3f9c9027c95"
+    },
+    "val": {
+      "path": "/root/autodl-tmp/GraphWaveNet/data/data1/val.npz",
+      "sha256": "8d9e70eed4122541666749c06c8602e528fec027876caeffd42e86384c270457"
+    },
+    "test": {
+      "path": "/root/autodl-tmp/GraphWaveNet/data/data1/test.npz",
+      "sha256": "314fe6ed9d34e5e9b2ea7e7a10bbf4872bbac1800f46c1bb4df51b52fb494061"
+    }
+  }
+}

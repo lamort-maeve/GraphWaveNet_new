@@ -1,0 +1,42 @@
+{
+  "epoch": 40,
+  "device": "cpu",
+  "pcmci_adjacency": "D:\\大创\\2026\\Graph-WaveNet-master\\动态因果优化\\k3_lambda0.3\\static_pcmci_exp_K3_lambda0.3.pkl",
+  "checkpoints": {
+    "Adaptive only": "D:\\大创\\2026\\Graph-WaveNet-master\\动态因果优化\\k3_lambda0.3\\result\\zishiying\\_epoch_40_10.05.pth",
+    "PCMCI only": "D:\\大创\\2026\\Graph-WaveNet-master\\动态因果优化\\k3_lambda0.3\\result\\yinguo\\_epoch_40_10.18.pth",
+    "Adaptive + PCMCI": "D:\\大创\\2026\\Graph-WaveNet-master\\动态因果优化\\k3_lambda0.3\\result\\zishiying_yinguo\\_epoch_40_10.05.pth"
+  },
+  "checkpoint_architecture": {
+    "Adaptive only": {
+      "adaptive_support": true,
+      "fixed_supports": 0,
+      "num_nodes": 20,
+      "in_dim": 1,
+      "out_dim": 12
+    },
+    "PCMCI only": {
+      "adaptive_support": false,
+      "fixed_supports": 2,
+      "num_nodes": 20,
+      "in_dim": 1,
+      "out_dim": 12
+    },
+    "Adaptive + PCMCI": {
+      "adaptive_support": true,
+      "fixed_supports": 2,
+      "num_nodes": 20,
+      "in_dim": 1,
+      "out_dim": 12
+    }
+  },
+  "note": "PCMCI-only and Adaptive+PCMCI use the static PCMCI matrix as Graph WaveNet doubletransition supports. Adaptive-only uses the learned adaptive matrix. Ground-truth y in this dataset is 1-step (5 min); extra model output steps are ignored when labels are shorter.",
+  "test_samples": 21022,
+  "nodes": 20,
+  "history": 12,
+  "target_horizons": 1,
+  "y_offsets": [
+    1
+  ],
+  "data_dir": "D:\\大创\\2026\\Graph-WaveNet-master\\Graph-WaveNet-master\\data\\METR-LA"
+}

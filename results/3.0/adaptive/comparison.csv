@@ -1,0 +1,2 @@
+mode,best_epoch,best_validation_mae,mae,rmse,mape,valid_count,mape_count,smoke_only
+adaptive,88,9.487210338303289,9.446877517964808,15.833344501040427,0.09775136559842618,415617,413979,False

@@ -1,0 +1,2 @@
+mode,best_epoch,mae,rmse,mape,valid_count,mape_count,smoke_only
+causal,53,9.627624267279717,16.071877989610876,0.10059003124738991,415617,413979,False

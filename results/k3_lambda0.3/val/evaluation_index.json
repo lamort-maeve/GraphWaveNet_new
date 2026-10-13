@@ -1,0 +1,28 @@
+{
+  "shared_epochs": [
+    10,
+    20,
+    30,
+    40,
+    50,
+    60,
+    70,
+    80,
+    90,
+    100
+  ],
+  "models": {
+    "Adaptive only": "D:\\大创\\2026\\Graph-WaveNet-master\\动态因果优化\\k3_lambda0.3\\result\\zishiying",
+    "PCMCI only": "D:\\大创\\2026\\Graph-WaveNet-master\\动态因果优化\\k3_lambda0.3\\result\\yinguo",
+    "Adaptive + PCMCI": "D:\\大创\\2026\\Graph-WaveNet-master\\动态因果优化\\k3_lambda0.3\\result\\zishiying_yinguo"
+  },
+  "output_dir": "D:\\大创\\2026\\Graph-WaveNet-master\\动态因果优化\\k3_lambda0.3\\val",
+  "test_samples": 21022,
+  "nodes": 20,
+  "history": 12,
+  "target_horizons": 1,
+  "y_offsets": [
+    1
+  ],
+  "data_dir": "D:\\大创\\2026\\Graph-WaveNet-master\\Graph-WaveNet-master\\data\\METR-LA"
+}

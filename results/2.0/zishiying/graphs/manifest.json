@@ -1,0 +1,3475 @@
+{
+  "graph_count": 341,
+  "shape": [
+    341,
+    13,
+    60,
+    60
+  ],
+  "axes": [
+    "window",
+    "lag",
+    "source_variable",
+    "target_variable"
+  ],
+  "variables": "all",
+  "node_ids": [
+    "400593",
+    "400125",
+    "400331",
+    "400039",
+    "400316",
+    "400503",
+    "405843",
+    "408093",
+    "401448",
+    "402391",
+    "400497",
+    "405841",
+    "404520",
+    "400183",
+    "401469",
+    "401472",
+    "405838",
+    "400260",
+    "404528",
+    "401795"
+  ],
+  "features": [
+    "flow",
+    "occupancy",
+    "speed"
+  ],
+  "alpha": 0.05,
+  "missing_slots": [
+    338,
+    339,
+    340,
+    341,
+    342,
+    343,
+    344,
+    346,
+    347,
+    348,
+    349,
+    350,
+    351,
+    352,
+    353,
+    354,
+    355
+  ],
+  "windows": [
+    {
+      "file": "graph_0000.npz",
+      "slot": 0,
+      "start": 0,
+      "end": 2016,
+      "available": 2016,
+      "sha256": "fe3228a06d80b785d4d6be6b131403a7aab187d068cefc1a68e199717227a92e",
+      "edges_sha256": "e45012710f518c156745b1a1b7f833e03cd6d91a42ac515784eece12914b8682",
+      "significant_entries": 4030
+    },
+    {
+      "file": "graph_0001.npz",
+      "slot": 1,
+      "start": 288,
+      "end": 2304,
+      "available": 2304,
+      "sha256": "ca07fff788ebe427a040c880acda51ad193c30dfbf45ed96484833fdd0fbe3fe",
+      "edges_sha256": "8432503c2b09f8641bf0649d88bff48433e463630519e901c84a417c77215cea",
+      "significant_entries": 4493
+    },
+    {
+      "file": "graph_0002.npz",
+      "slot": 2,
+      "start": 576,
+      "end": 2592,
+      "available": 2592,
+      "sha256": "3b41c800837ae746384ca039f78a6535cc19f46e30224082b02a0bc9b723ea83",
+      "edges_sha256": "e404bbefb7612d5f3f7365d986935395f55c01515ead136000445198b427ffb7",
+      "significant_entries": 4502
+    },
+    {
+      "file": "graph_0003.npz",
+      "slot": 3,
+      "start": 864,
+      "end": 2880,
+      "available": 2880,
+      "sha256": "7436d2b266465489d8b65ebe2408d42a85a8c414446888b6152acb3093dac116",
+      "edges_sha256": "c3e930949b19b410736abab1d51a3eebf1321c88fde438121111942a6498ae99",
+      "significant_entries": 4176
+    },
+    {
+      "file": "graph_0004.npz",
+      "slot": 4,
+      "start": 1152,
+      "end": 3168,
+      "available": 3168,
+      "sha256": "91b32bf386a521e43c889dd46f1819f0a9c82d0e77c3fa1d0df3980483779ac8",
+      "edges_sha256": "e7d20fcff0a832bc21d1389f7ac7563ff2e23d3da25054d66389404399c805a2",
+      "significant_entries": 4409
+    },
+    {
+      "file": "graph_0005.npz",
+      "slot": 5,
+      "start": 1440,
+      "end": 3456,
+      "available": 3456,
+      "sha256": "f35422efd955060ad9d0a896e3d8de0e6e478f566a1d9473d94e8694d74e30e7",
+      "edges_sha256": "b8d2cbbb58986b3a4d0e18df1d21c4155bc44e95f99445b13eeee2db11619505",
+      "significant_entries": 3999
+    },
+    {
+      "file": "graph_0006.npz",
+      "slot": 6,
+      "start": 1728,
+      "end": 3744,
+      "available": 3744,
+      "sha256": "587c612cd2f1ba0e494c591e31ea2032645738b479af9f5b2bf4444bae3ad168",
+      "edges_sha256": "aa799b180d928153cb428c268d614309b9c694be4389c2af7966d9c822eccfd3",
+      "significant_entries": 4060
+    },
+    {
+      "file": "graph_0007.npz",
+      "slot": 7,
+      "start": 2016,
+      "end": 4032,
+      "available": 4032,
+      "sha256": "965386181e0abf745012128b4fb1ee5048437ac43c6a3e0019c1025640f1d974",
+      "edges_sha256": "ec0dd1355448e50c6dc972bb7eacc7edf7434e41110520ecf9e4b07358171a32",
+      "significant_entries": 4299
+    },
+    {
+      "file": "graph_0008.npz",
+      "slot": 8,
+      "start": 2304,
+      "end": 4320,
+      "available": 4320,
+      "sha256": "4116693a817e90d190350524aaf60cfc405221015328e5a85e76516541a668c9",
+      "edges_sha256": "f38d45c90574dd7428770900fa2b42becb512cbad33f79afa97e8afdbf227c6b",
+      "significant_entries": 4208
+    },
+    {
+      "file": "graph_0009.npz",
+      "slot": 9,
+      "start": 2592,
+      "end": 4608,
+      "available": 4608,
+      "sha256": "30008eb8af0738ec8df8adb91d74f1b109f789a76295983a136346326342feb8",
+      "edges_sha256": "9ede9a31d9f113302f8c09fb42909201bf387aca5016a9b4cfd4277cbe222ad2",
+      "significant_entries": 4458
+    },
+    {
+      "file": "graph_0010.npz",
+      "slot": 10,
+      "start": 2880,
+      "end": 4896,
+      "available": 4896,
+      "sha256": "3d7f369e88832acaf1be3ce6e51d4b86158b1ebb87c077344020caf609bb2ebb",
+      "edges_sha256": "e4d003736c49bc57e9814023cb7b0621adaa5bf500056f0a4d8031c0766871d9",
+      "significant_entries": 4111
+    },
+    {
+      "file": "graph_0011.npz",
+      "slot": 11,
+      "start": 3168,
+      "end": 5184,
+      "available": 5184,
+      "sha256": "540f70bf7f27bb4573dd349428b69c5a6d05a1ef5e58446f282d2aa5c9fd0725",
+      "edges_sha256": "89d7359a8e4ff056a1c64d5f984cebf8db400e72f1d8514d749df3037c97bcca",
+      "significant_entries": 4176
+    },
+    {
+      "file": "graph_0012.npz",
+      "slot": 12,
+      "start": 3456,
+      "end": 5472,
+      "available": 5472,
+      "sha256": "55d1ef9be7f4a0ebb7cd3dab0ebeebf7b7f77eabb71ccc3e5683c0b031e254ed",
+      "edges_sha256": "68f5efad834cc6437c60b0590cf877194670b6642aac451a62eb61dffe34a80d",
+      "significant_entries": 4220
+    },
+    {
+      "file": "graph_0013.npz",
+      "slot": 13,
+      "start": 3744,
+      "end": 5760,
+      "available": 5760,
+      "sha256": "f0df7ad6ce6cdfcf8a9579e40fdc332af13e54060dd463b35127ba8201fbf6be",
+      "edges_sha256": "05bf00c58b6e04f399a90abd47c4acbecf37f243386e6cdbacbd3083e5b4848d",
+      "significant_entries": 4455
+    },
+    {
+      "file": "graph_0014.npz",
+      "slot": 14,
+      "start": 4032,
+      "end": 6048,
+      "available": 6048,
+      "sha256": "43c6efaddf62c72668f387a08068b3e999b4ecc47c4abf62f537f471e4b16f78",
+      "edges_sha256": "70be5764c6418dba45a648e7844980de6a1d98b52d49520906f7cbb2e99af746",
+      "significant_entries": 4758
+    },
+    {
+      "file": "graph_0015.npz",
+      "slot": 15,
+      "start": 4320,
+      "end": 6336,
+      "available": 6336,
+      "sha256": "67038bab16d62ebd52b83ec0b28bf74e7ea3a7423a918e9d93fcafc56d64a155",
+      "edges_sha256": "5d944121df1d9fa984af2d0b5d27a26a1ed9a5687222ff1ff58ee356f1a7abff",
+      "significant_entries": 4978
+    },
+    {
+      "file": "graph_0016.npz",
+      "slot": 16,
+      "start": 4608,
+      "end": 6624,
+      "available": 6624,
+      "sha256": "a3a781874a0c789a39e84263fadae821d818a46168d30dd1c2ced0ddb426f29f",
+      "edges_sha256": "4a4fe1d5eab79bf1f1f1ee5254d64270423d1a5b9fa7a8cad359621f0e4bc277",
+      "significant_entries": 5301
+    },
+    {
+      "file": "graph_0017.npz",
+      "slot": 17,
+      "start": 4896,
+      "end": 6912,
+      "available": 6912,
+      "sha256": "f53ce28e954e9a960dcf8c038f206dc696333cf2ef4e9a3ab8b66e843002c67d",
+      "edges_sha256": "e6cd3011a7217b6144163640b3caad93797df84f955e4da18f8e328de4cec845",
+      "significant_entries": 6198
+    },
+    {
+      "file": "graph_0018.npz",
+      "slot": 18,
+      "start": 5184,
+      "end": 7200,
+      "available": 7200,
+      "sha256": "2d54b4718210f79f7e311a9cda793f46c9f4f958365a6aca7e33b84cb75342df",
+      "edges_sha256": "5272ce17f800948d283d9e1f461795382f29a7704b216c58b9ce899355b7284f",
+      "significant_entries": 5932
+    },
+    {
+      "file": "graph_0019.npz",
+      "slot": 19,
+      "start": 5472,
+      "end": 7488,
+      "available": 7488,
+      "sha256": "7b01c596ab84d6f23cc6fb8bf20e6920b923c7b2ebe91a4472322c1859eabcea",
+      "edges_sha256": "58f0a75d76f58e692c5d23966b224a4221afb2fd6b4bf0ad2550d37cbb263d92",
+      "significant_entries": 5639
+    },
+    {
+      "file": "graph_0020.npz",
+      "slot": 20,
+      "start": 5760,
+      "end": 7776,
+      "available": 7776,
+      "sha256": "763ca2e1d4c2fc5316c5886352f0c9bbf4998b4ae43e8abf657f153476d00844",
+      "edges_sha256": "17795c292ef492430178c59394aa944a16a6750a68ded05cff6389997db62cb8",
+      "significant_entries": 6171
+    },
+    {
+      "file": "graph_0021.npz",
+      "slot": 21,
+      "start": 6048,
+      "end": 8064,
+      "available": 8064,
+      "sha256": "a905f674363beda22a704b9a27ee3eb2e659d9621874b52144b88d515171ca15",
+      "edges_sha256": "e8f7297314a12ef1470c96d9d673e89fd6e7ce007c817c00f863c49619c7d7dd",
+      "significant_entries": 6691
+    },
+    {
+      "file": "graph_0022.npz",
+      "slot": 22,
+      "start": 6336,
+      "end": 8352,
+      "available": 8352,
+      "sha256": "3a634cb754a894a5fac72e881ca3cc00099b7bf1d7234c7eadf176ab1b2bb2c9",
+      "edges_sha256": "51731521b3c0dbf01da88bc678c4e9c8971240ff16344117ea70d38e016f5f73",
+      "significant_entries": 5899
+    },
+    {
+      "file": "graph_0023.npz",
+      "slot": 23,
+      "start": 6624,
+      "end": 8640,
+      "available": 8640,
+      "sha256": "679beb52c9d7241b18f38f803569a39587463767b722143cdf4796bec582c588",
+      "edges_sha256": "428d3fb2c5bb00bdaf07468ec8f6e34d6f9f1bb8409d84f800e04f55cd46441c",
+      "significant_entries": 6143
+    },
+    {
+      "file": "graph_0024.npz",
+      "slot": 24,
+      "start": 6912,
+      "end": 8928,
+      "available": 8928,
+      "sha256": "94bea21642789ea25a56a3c08d0aa73f6c2042f39bc49025ce680e33785d5eec",
+      "edges_sha256": "4a7dbaea90709e502551a54b154f11ca4a376541d3978a533522ce9534722aee",
+      "significant_entries": 7184
+    },
+    {
+      "file": "graph_0025.npz",
+      "slot": 25,
+      "start": 7200,
+      "end": 9216,
+      "available": 9216,
+      "sha256": "6613e3495c217862efb7df112ae17126de7d1d17262f977fe7d28c4e18f4b332",
+      "edges_sha256": "4e0741ffeacc6035eb80f284828b2b07bf1df2f4197bbf98927ea17b2dc3c0a7",
+      "significant_entries": 7105
+    },
+    {
+      "file": "graph_0026.npz",
+      "slot": 26,
+      "start": 7488,
+      "end": 9504,
+      "available": 9504,
+      "sha256": "fe9908d7b467f7f69672da9f90e33a2b2c42b0e9ae1930ce452a74a5391dc683",
+      "edges_sha256": "e05d16100c107430562a3cf891075c611a3e93e11b8053884e22aa4397d5f249",
+      "significant_entries": 7725
+    },
+    {
+      "file": "graph_0027.npz",
+      "slot": 27,
+      "start": 7776,
+      "end": 9792,
+      "available": 9792,
+      "sha256": "a9b55eb51565244b73b3ba66ed87d5bae78a8099487ca091b4fd90cb05d2c3a1",
+      "edges_sha256": "cfd5049e7f53674c998a3d8462166c6b4d9dee8441cc0608454e95d608f7f79c",
+      "significant_entries": 7565
+    },
+    {
+      "file": "graph_0028.npz",
+      "slot": 28,
+      "start": 8064,
+      "end": 10080,
+      "available": 10080,
+      "sha256": "0ed717e07d557e08da01df43af1ff020a81d638c8b39b39f7bbcce58d2bd49a1",
+      "edges_sha256": "e785334cb72e4e88f5beeceeefdc0a3334a76915f648a245a6d89d2b99e2be34",
+      "significant_entries": 6970
+    },
+    {
+      "file": "graph_0029.npz",
+      "slot": 29,
+      "start": 8352,
+      "end": 10368,
+      "available": 10368,
+      "sha256": "ab433f31ee97e4fac5cb59b99aad83885704cf089fd1e246e4e6eb16f04e4812",
+      "edges_sha256": "7ec475931a2d584b5df8bb6d0154062d3329ecac7e99cf1fb413c44187d83c74",
+      "significant_entries": 6539
+    },
+    {
+      "file": "graph_0030.npz",
+      "slot": 30,
+      "start": 8640,
+      "end": 10656,
+      "available": 10656,
+      "sha256": "b9e2e6b280c8ff13de6d7dfef99255cdec253e8af41662c2fa43d72237ee1757",
+      "edges_sha256": "87788bdc4d5225367c4fb2589d2d8dc36804a821f2e4bcad36d7aa8c312b5a6f",
+      "significant_entries": 6037
+    },
+    {
+      "file": "graph_0031.npz",
+      "slot": 31,
+      "start": 8928,
+      "end": 10944,
+      "available": 10944,
+      "sha256": "b6fdaf6824914b399d9d1b0e3cd78b8a9a78f4e036664b7934bae8a45780c345",
+      "edges_sha256": "8383bae5c3965c5ca4c419d6e7379a2ea3f1201ee9c499d15b4087d91151ab58",
+      "significant_entries": 6802
+    },
+    {
+      "file": "graph_0032.npz",
+      "slot": 32,
+      "start": 9216,
+      "end": 11232,
+      "available": 11232,
+      "sha256": "5eb7611047761af91e8fa6d7136e6a39a40c6c0e3d491b900a2f422d4c259b9c",
+      "edges_sha256": "ec67f1c55bd6bd2ebb9b289fa806b8cb3a766f5c8b9849e38f2bfac1642b25b8",
+      "significant_entries": 6481
+    },
+    {
+      "file": "graph_0033.npz",
+      "slot": 33,
+      "start": 9504,
+      "end": 11520,
+      "available": 11520,
+      "sha256": "bac6cdf48f903d21f669e0b6fd7bde6f9ab1acd455c4ccb21a5ef13334f75cff",
+      "edges_sha256": "025507aa2acbf9e0dcfa9fa827a2f56f725c0c45053b5d4138dbe544824c44d2",
+      "significant_entries": 6321
+    },
+    {
+      "file": "graph_0034.npz",
+      "slot": 34,
+      "start": 9792,
+      "end": 11808,
+      "available": 11808,
+      "sha256": "e2624c3e32db3afec60228f92167538de5d486ea097587f7e894cf43cf8694ee",
+      "edges_sha256": "19008744742c9d6f03dbbb9215b7eb04770e7e0fa7bcb9339a63c343775969d4",
+      "significant_entries": 6460
+    },
+    {
+      "file": "graph_0035.npz",
+      "slot": 35,
+      "start": 10080,
+      "end": 12096,
+      "available": 12096,
+      "sha256": "f091b3120a6b76f83887e5b93ca1dfe6d368bcda834378e840b01666379d4b0a",
+      "edges_sha256": "14d7ab6c78d13ca40f1f1a68eacb12c9493928b815098d5a7db6199059d9e918",
+      "significant_entries": 6240
+    },
+    {
+      "file": "graph_0036.npz",
+      "slot": 36,
+      "start": 10368,
+      "end": 12384,
+      "available": 12384,
+      "sha256": "74c1294397892eb348cd3bbdccd56d4cf157fbf4539fe1a9a6c78d2a88c8268a",
+      "edges_sha256": "0eb8196c250739d3ff2fa4e770b649092b3665110c837e5a62623f321c583b43",
+      "significant_entries": 6224
+    },
+    {
+      "file": "graph_0037.npz",
+      "slot": 37,
+      "start": 10656,
+      "end": 12672,
+      "available": 12672,
+      "sha256": "5e0b3ebca71b3618285e61cc3230945acaaa8cfbbff76854e2c38f79feda0ae2",
+      "edges_sha256": "408857108731178c177145a9a06bdd1d3084cddc6fc61cb7aee3312482909abb",
+      "significant_entries": 6515
+    },
+    {
+      "file": "graph_0038.npz",
+      "slot": 38,
+      "start": 10944,
+      "end": 12960,
+      "available": 12960,
+      "sha256": "f13448ecee7f0c6b29721edd55d4d5aa2af925f25560b10002f148a96e44f1f8",
+      "edges_sha256": "a38df959cfa8b699cfadf20ccbb37860ec87bf9f22b526025833f4f57cfb05e6",
+      "significant_entries": 6256
+    },
+    {
+      "file": "graph_0039.npz",
+      "slot": 39,
+      "start": 11232,
+      "end": 13248,
+      "available": 13248,
+      "sha256": "ff51b2099a4c33a9629e179481df7f759dd18584c101142f8e97448bf178cb8e",
+      "edges_sha256": "0460a0ed563ff0ab7f6bee81ee4cb76d1bac2770e8a14986d34e3f70182881e5",
+      "significant_entries": 6001
+    },
+    {
+      "file": "graph_0040.npz",
+      "slot": 40,
+      "start": 11520,
+      "end": 13536,
+      "available": 13536,
+      "sha256": "148c7cbf2382da7748478395bbeaf1270616a40dadbed801aadce4e446cec3e6",
+      "edges_sha256": "456ab232b7e3bb494dfe9a581b3eae80437ac22daa0397f4e6e00764da211322",
+      "significant_entries": 5450
+    },
+    {
+      "file": "graph_0041.npz",
+      "slot": 41,
+      "start": 11808,
+      "end": 13824,
+      "available": 13824,
+      "sha256": "619c06c11416ec114c584e6549c755d7b4212379f77df74e2a21fe75f4ebfd46",
+      "edges_sha256": "d4f81967ce401fe134a57b284083ad5a9a27dbfcd71cebaad0827afcc4143ad7",
+      "significant_entries": 5310
+    },
+    {
+      "file": "graph_0042.npz",
+      "slot": 42,
+      "start": 12096,
+      "end": 14112,
+      "available": 14112,
+      "sha256": "7af8749becadf7940cd888f9373094a4c4a1a653eb07a67a73d1c9b24b8fca83",
+      "edges_sha256": "4b35143892a465b0ff00cf8bde11256f13b15748cffe2505c09bdb2ef3fb013e",
+      "significant_entries": 5368
+    },
+    {
+      "file": "graph_0043.npz",
+      "slot": 43,
+      "start": 12384,
+      "end": 14400,
+      "available": 14400,
+      "sha256": "40fad056dfa7302357856197c1aa4088025174d8c5dc054c1feb5aa42ace1504",
+      "edges_sha256": "c4150148c33aca319f77c1a06f79095ef3e91612123a3ce5adf6c12e62b12977",
+      "significant_entries": 6061
+    },
+    {
+      "file": "graph_0044.npz",
+      "slot": 44,
+      "start": 12672,
+      "end": 14688,
+      "available": 14688,
+      "sha256": "941e8f490722c49a1b2b2dbc78a301261d183eb3e3f3327e5700085271c2b884",
+      "edges_sha256": "681c613fb6ace0c7357dbe3016feeb3cb42048432de695a0a82ae1e83ad96c31",
+      "significant_entries": 5687
+    },
+    {
+      "file": "graph_0045.npz",
+      "slot": 45,
+      "start": 12960,
+      "end": 14976,
+      "available": 14976,
+      "sha256": "5a26f62e2b1b69e4c24caa0d0166945b4c4d25d7704ced384483c2f074dac47c",
+      "edges_sha256": "2827fa6df74de91f2ad91ea65ffdb879069de758393573a8326a0bc1f6c14067",
+      "significant_entries": 5288
+    },
+    {
+      "file": "graph_0046.npz",
+      "slot": 46,
+      "start": 13248,
+      "end": 15264,
+      "available": 15264,
+      "sha256": "7b09c3de07838c2c94d96263c89932a2c0650bbb0957a57f756cc0fc38820cb1",
+      "edges_sha256": "0adf55a72c68dab58824fb1c0bf4654c92a5138cb3c67c11cee7a1449ff5a9be",
+      "significant_entries": 6650
+    },
+    {
+      "file": "graph_0047.npz",
+      "slot": 47,
+      "start": 13536,
+      "end": 15552,
+      "available": 15552,
+      "sha256": "165b78d0ba9b35ddf16c48d9630b27daa029937882fb0c79e83550cb4cb7f746",
+      "edges_sha256": "08d602cbd654613701b1c9a894b354b563cc37a95bece89df408987af7985e69",
+      "significant_entries": 5786
+    },
+    {
+      "file": "graph_0048.npz",
+      "slot": 48,
+      "start": 13824,
+      "end": 15840,
+      "available": 15840,
+      "sha256": "a99673f6b3479ca6bb63cdc6ed5dc9a47349aa3329742fd94c447a47a1013748",
+      "edges_sha256": "1a40a5909b480f893ebe23daf9ed9072e7a2ed9ae48da2d75065ad1de79e014b",
+      "significant_entries": 5255
+    },
+    {
+      "file": "graph_0049.npz",
+      "slot": 49,
+      "start": 14112,
+      "end": 16128,
+      "available": 16128,
+      "sha256": "2622c81f7e5bffef23f84b365d8243b44224236991a887be7ccab39deb5279ac",
+      "edges_sha256": "410f2a135e75f26c1456c00bb1142882abf3ad907e9f502241f7e2f377a63bfe",
+      "significant_entries": 6008
+    },
+    {
+      "file": "graph_0050.npz",
+      "slot": 50,
+      "start": 14400,
+      "end": 16416,
+      "available": 16416,
+      "sha256": "31ea0c61956849ae337fbbf663f20a50f684ae4b52373b996d0b29e7df9313cf",
+      "edges_sha256": "3b9ea64512f31c3243d93c6a62ba297cc6ce64eb716934398c9d3602e7b80914",
+      "significant_entries": 5394
+    },
+    {
+      "file": "graph_0051.npz",
+      "slot": 51,
+      "start": 14688,
+      "end": 16704,
+      "available": 16704,
+      "sha256": "770444d628a0f5b4af858ae4c734937dd04db8c6df8dfee308611ad2dd4b168b",
+      "edges_sha256": "f2dc11f0bf7d53d8a55d6d7cdc49723bf29f07b85f1cc5b5ca6f0a65a87e7a94",
+      "significant_entries": 5202
+    },
+    {
+      "file": "graph_0052.npz",
+      "slot": 52,
+      "start": 14976,
+      "end": 16992,
+      "available": 16992,
+      "sha256": "b9d099b2b9126fe574f1b5af2166b8f6f5f01c98fafcda6aec4abc6b011b134b",
+      "edges_sha256": "282b5bc373674494b8714f8f9fdb318fdc77cafde148c9c763bee8ada9136642",
+      "significant_entries": 4890
+    },
+    {
+      "file": "graph_0053.npz",
+      "slot": 53,
+      "start": 15264,
+      "end": 17280,
+      "available": 17280,
+      "sha256": "6a6c4b6c9715343a90677bf00997aed88dd020fca233e9df975a2c587bec2077",
+      "edges_sha256": "7f1576c1282d3f549f533490e1d75829abff008617445b7cf8c3cfefa3fb7bb5",
+      "significant_entries": 5386
+    },
+    {
+      "file": "graph_0054.npz",
+      "slot": 54,
+      "start": 15552,
+      "end": 17568,
+      "available": 17568,
+      "sha256": "74c3b4d07a8c1dd330fb36403ef029d6d6f0e7ffd6ee6b95cd7327a8da6019db",
+      "edges_sha256": "5c9b9e69209c8e33359d88f3887924119a754e0754c752b2340433f4d6ecf262",
+      "significant_entries": 5336
+    },
+    {
+      "file": "graph_0055.npz",
+      "slot": 55,
+      "start": 15840,
+      "end": 17856,
+      "available": 17856,
+      "sha256": "775bceba7862aa5c6e8ea6e92f44e1358ef9aac6718907d6832015e50a550077",
+      "edges_sha256": "e82005f22cd07961fc7551f94096dab0a4af5bc641f4a5a0d4e55d3fea00a598",
+      "significant_entries": 5438
+    },
+    {
+      "file": "graph_0056.npz",
+      "slot": 56,
+      "start": 16128,
+      "end": 18144,
+      "available": 18144,
+      "sha256": "d9597ecab43acf9a78c82daf8450957370230024e095fcf520a3f44bb9a0b5c7",
+      "edges_sha256": "3bb84d2bb5b2098fee57341e512d65f6b13ba07735d03f1a4ee0a84ec4439bcb",
+      "significant_entries": 5492
+    },
+    {
+      "file": "graph_0057.npz",
+      "slot": 57,
+      "start": 16416,
+      "end": 18432,
+      "available": 18432,
+      "sha256": "2467bcc42b724f3ebb7617a1bdd3c141278fc58f2845f2a4b8b3cc11325365b9",
+      "edges_sha256": "74128c102acd3e9f6720e62dbbbd39ae40ef478f74f263544bb7452e85ec5a08",
+      "significant_entries": 5141
+    },
+    {
+      "file": "graph_0058.npz",
+      "slot": 58,
+      "start": 16704,
+      "end": 18720,
+      "available": 18720,
+      "sha256": "7e369549378dfd0140d8a4197f42d6431da822e341f336415974211d0553cb26",
+      "edges_sha256": "360e91b7c6ecc50245a9007825811a9da2172457f8f04c6cd18690708846cd8c",
+      "significant_entries": 5212
+    },
+    {
+      "file": "graph_0059.npz",
+      "slot": 59,
+      "start": 16992,
+      "end": 19008,
+      "available": 19008,
+      "sha256": "2c3ebed607f25c643d7dd638be458af19f4bb376caac8fc85a3a5dd4a6110d94",
+      "edges_sha256": "8fb74c9023009140a3af621315f693810ab96b0af5a28346314a21eb9c6dd949",
+      "significant_entries": 5405
+    },
+    {
+      "file": "graph_0060.npz",
+      "slot": 60,
+      "start": 17280,
+      "end": 19296,
+      "available": 19296,
+      "sha256": "b57adb8212730fed36ddd3a46a14af19a8ce1f7ae29a63eec5c13520e7b50bda",
+      "edges_sha256": "4181e5cd4b37a7d4141309d9ea8b1e7a62e2f04ea1fc5151b8afb6650086310c",
+      "significant_entries": 5720
+    },
+    {
+      "file": "graph_0061.npz",
+      "slot": 61,
+      "start": 17568,
+      "end": 19584,
+      "available": 19584,
+      "sha256": "df83e177a4a295d639a54541c06ade0c849e2baff9c8193caf9c7a6cd39b7081",
+      "edges_sha256": "ae4428addf87c4a0499b35a2ff58ca873297d5af7b284fe0e7081b04280edcc4",
+      "significant_entries": 4748
+    },
+    {
+      "file": "graph_0062.npz",
+      "slot": 62,
+      "start": 17856,
+      "end": 19872,
+      "available": 19872,
+      "sha256": "079bf3e2a34cdf4b2320ae59bd0860d074de7a2d18a7bd252c4f592e310ea77b",
+      "edges_sha256": "dfa63c087dc4c69da01cce7e47d9f5b337995ce527c3578eb6716ea7984a4b83",
+      "significant_entries": 5611
+    },
+    {
+      "file": "graph_0063.npz",
+      "slot": 63,
+      "start": 18144,
+      "end": 20160,
+      "available": 20160,
+      "sha256": "77aafa95c690ae0eb96f26f519337eb8aa9ce18c1ae8ad906f91947d8004aa80",
+      "edges_sha256": "584f05ccd247b4f1e10eb7897d9552684bf9ae1ca6a6af5a4918132173003293",
+      "significant_entries": 6182
+    },
+    {
+      "file": "graph_0064.npz",
+      "slot": 64,
+      "start": 18432,
+      "end": 20448,
+      "available": 20448,
+      "sha256": "21b9b410b16cb6fc31fe14425af3a585cb94dce93c2867c751de0aae053aedf7",
+      "edges_sha256": "5d3922f8a0fc8e7f8b23e6d82f33d953cd3a48723062cee0f41a986d7a045a2c",
+      "significant_entries": 5915
+    },
+    {
+      "file": "graph_0065.npz",
+      "slot": 65,
+      "start": 18720,
+      "end": 20736,
+      "available": 20736,
+      "sha256": "416a95f9012fbf9b634196fba323e550409ec0e0282bfd21b6846694241a9aa8",
+      "edges_sha256": "065101640f68c2dd3bb752d5809790c9b0b8e9c90e5ccd6d0ecaf67aaee10cf5",
+      "significant_entries": 5778
+    },
+    {
+      "file": "graph_0066.npz",
+      "slot": 66,
+      "start": 19008,
+      "end": 21024,
+      "available": 21024,
+      "sha256": "3bc824b8d8a1347d2d095830b0c4c4e784ef58ab25e9ffd8b62df500d958fb33",
+      "edges_sha256": "be4706f734689ef5a1e30a964f5d5e76b546b765b88c942f3320e6f50f413d98",
+      "significant_entries": 5935
+    },
+    {
+      "file": "graph_0067.npz",
+      "slot": 67,
+      "start": 19296,
+      "end": 21312,
+      "available": 21312,
+      "sha256": "d8ac3a3a6a14108bd1abe91fce28e5d536ce4c89a2cc1a2d182700e434f78e75",
+      "edges_sha256": "868ac2e44ab958fd884f183235c3ad7ca241b36d44e9abcb1a9541b8456541ac",
+      "significant_entries": 6501
+    },
+    {
+      "file": "graph_0068.npz",
+      "slot": 68,
+      "start": 19584,
+      "end": 21600,
+      "available": 21600,
+      "sha256": "f35109b5a81dd2e1ac1231ac6b98403f21bf9bf37522df360e3230d947a28e8e",
+      "edges_sha256": "029da0fb3c106e1f9cc64cd574de1cab4eaf359c734c477aeab1f7d1d06a145c",
+      "significant_entries": 6457
+    },
+    {
+      "file": "graph_0069.npz",
+      "slot": 69,
+      "start": 19872,
+      "end": 21888,
+      "available": 21888,
+      "sha256": "5181785939110b1ba02e73d3439a3fdee1b6536a032b8432bd585ccf68bb22dd",
+      "edges_sha256": "37e0553186a45c8ecbeddf645ff9901f2717fdff33bb0702651cd7a54e269a60",
+      "significant_entries": 6859
+    },
+    {
+      "file": "graph_0070.npz",
+      "slot": 70,
+      "start": 20160,
+      "end": 22176,
+      "available": 22176,
+      "sha256": "833db6eee066d74209db09611e2805bec8b3a47f7b7bb0a8e3fc96e2bb29e84b",
+      "edges_sha256": "fb6ed55cb01ed931f811db2e37981b009df80c0167d9e3f0da234e3d48109e1f",
+      "significant_entries": 6160
+    },
+    {
+      "file": "graph_0071.npz",
+      "slot": 71,
+      "start": 20448,
+      "end": 22464,
+      "available": 22464,
+      "sha256": "22059ed601fba3aa61e741e07621df950957a11fa625fc8ba647a1104c33fbe6",
+      "edges_sha256": "796f965a5679cca7808d3574e3a04d2c31d191f1b9fb2bada10693e01588a53d",
+      "significant_entries": 6281
+    },
+    {
+      "file": "graph_0072.npz",
+      "slot": 72,
+      "start": 20736,
+      "end": 22752,
+      "available": 22752,
+      "sha256": "f21b95b69901d6e639701f30f503bc12d5849434a98355e8d035142a98195b1f",
+      "edges_sha256": "5ce0933adeeeaa3811dd5c8010a98b4dd278ec66e9ece402829ddb4361f75940",
+      "significant_entries": 6094
+    },
+    {
+      "file": "graph_0073.npz",
+      "slot": 73,
+      "start": 21024,
+      "end": 23040,
+      "available": 23040,
+      "sha256": "c36a440d2bf42b7f2004951c89eecdbd4ef062b295869efcfd0677b66e09eda7",
+      "edges_sha256": "e6b8ac2e6673d1035563084920a81344c9f51daeac5a63adddc4676247ce5710",
+      "significant_entries": 5874
+    },
+    {
+      "file": "graph_0074.npz",
+      "slot": 74,
+      "start": 21312,
+      "end": 23328,
+      "available": 23328,
+      "sha256": "4b19d97a71203d4d15be5a3788e83af02a2942c6a673a74e6c0c90c7a9c3ac05",
+      "edges_sha256": "acc2a4ee3dddce294dd6606ee8fdebb5d5a3369c1035dbb9e3e7eab02a578c0f",
+      "significant_entries": 5921
+    },
+    {
+      "file": "graph_0075.npz",
+      "slot": 75,
+      "start": 21600,
+      "end": 23616,
+      "available": 23616,
+      "sha256": "17efb10cd37c4ac20a2a30fee048793fb50f955453b424a41742c8a4daa52064",
+      "edges_sha256": "842c13232a8d5ab2cd5f6ce780f83f1f11a62b0891aec2e11daa8777c4899818",
+      "significant_entries": 5353
+    },
+    {
+      "file": "graph_0076.npz",
+      "slot": 76,
+      "start": 21888,
+      "end": 23904,
+      "available": 23904,
+      "sha256": "f561d4b4471faaf7d3ff911fca5aadb3bf3173c3fc39fc553e2c4be38038de78",
+      "edges_sha256": "7897938146a8f1f0b0fe18de70302a05219573db5af3eb374ed219d494e81e5e",
+      "significant_entries": 6024
+    },
+    {
+      "file": "graph_0077.npz",
+      "slot": 77,
+      "start": 22176,
+      "end": 24192,
+      "available": 24192,
+      "sha256": "306d710657980581d939a3723f4246c8dc375dbcc7c2c4a144548431d2ccc531",
+      "edges_sha256": "78784a730dd45045a1697e0a83f98b8457fbeecf5ae09d62e325be75da7f344d",
+      "significant_entries": 5674
+    },
+    {
+      "file": "graph_0078.npz",
+      "slot": 78,
+      "start": 22464,
+      "end": 24480,
+      "available": 24480,
+      "sha256": "008279b4a9de557c39e9903bb68fa84d8bbfe53373725f1f12ef22743342a87d",
+      "edges_sha256": "0ae5f73f73ba96538bdb918e3767de404f95489646e5a4af432160e1280ecb76",
+      "significant_entries": 5972
+    },
+    {
+      "file": "graph_0079.npz",
+      "slot": 79,
+      "start": 22752,
+      "end": 24768,
+      "available": 24768,
+      "sha256": "770743a2a9c01f98298f2bfaab320d97948907e4b245764c982fd1261c23148e",
+      "edges_sha256": "747b5e5dd019ad3ce7e52e62d5af4653f5cc0f2ef49a617eccb5bbcb2e203388",
+      "significant_entries": 5592
+    },
+    {
+      "file": "graph_0080.npz",
+      "slot": 80,
+      "start": 23040,
+      "end": 25056,
+      "available": 25056,
+      "sha256": "08cef29f43a757794f1400c6a9324c35011560fdc2171c385dbf5aee8c889cea",
+      "edges_sha256": "833a15c1eaa8d21f375908e31db6b9964046712794a3547b8d5debe92adb3994",
+      "significant_entries": 6210
+    },
+    {
+      "file": "graph_0081.npz",
+      "slot": 81,
+      "start": 23328,
+      "end": 25344,
+      "available": 25344,
+      "sha256": "0baa118ded6b8856f47b1bfa4f336aec9f2d748f6acdf4ccc5f69e5c58e75a9d",
+      "edges_sha256": "c34ff4f9b7f500586bd21a68de09e60dbf44ace93c5b17c1b03eb98ad59b31cb",
+      "significant_entries": 6139
+    },
+    {
+      "file": "graph_0082.npz",
+      "slot": 82,
+      "start": 23616,
+      "end": 25632,
+      "available": 25632,
+      "sha256": "1290caf2ac7bad2233a98cf222199bbf8102270f6d8f57ba39adf8267dab92b1",
+      "edges_sha256": "b2fe081f811313cb099d38e6af4621a98b46e268c31bdd9c1b8076c12a35cf33",
+      "significant_entries": 5860
+    },
+    {
+      "file": "graph_0083.npz",
+      "slot": 83,
+      "start": 23904,
+      "end": 25920,
+      "available": 25920,
+      "sha256": "45fcc36b001555f3638245c14a01b17ec1123f7da62bfd55aa34a4d67298c16b",
+      "edges_sha256": "5b75765ad918812af944009e2c75c134372ef42e37c1216179ab219bb0ac4846",
+      "significant_entries": 5892
+    },
+    {
+      "file": "graph_0084.npz",
+      "slot": 84,
+      "start": 24192,
+      "end": 26208,
+      "available": 26208,
+      "sha256": "805c216aac7d16dac4c6f48439a80becc82647f916fabbaa667584421d1a47e0",
+      "edges_sha256": "7c9e377a7ef98c342a2757d5cdc9ae446624e8309a01c0fefae4f0dbf994f257",
+      "significant_entries": 5612
+    },
+    {
+      "file": "graph_0085.npz",
+      "slot": 85,
+      "start": 24480,
+      "end": 26496,
+      "available": 26496,
+      "sha256": "014afac13a14eb6143f53c16a0ccb500c20c5d8c9ce5a26e89a111e8fae30ef2",
+      "edges_sha256": "7ea5969e4c2cccaf08e94cd9d6a198556d55bd529f6562a86fd4714b6840d62d",
+      "significant_entries": 5167
+    },
+    {
+      "file": "graph_0086.npz",
+      "slot": 86,
+      "start": 24768,
+      "end": 26784,
+      "available": 26784,
+      "sha256": "19509a28602788df0f40999258c53004178011a59e67f8345f17575cd8565c34",
+      "edges_sha256": "e04b9088127c3c82e2938352b72998b8e7257819082541f4acab5d79e7a20f9a",
+      "significant_entries": 4972
+    },
+    {
+      "file": "graph_0087.npz",
+      "slot": 87,
+      "start": 25056,
+      "end": 27072,
+      "available": 27072,
+      "sha256": "6f18abbaab994757717d2a1a0ffe61f17a6a00471b09ae8718b2d386573249b5",
+      "edges_sha256": "e80cc29071b8120e9aa33f1bfbdf13161850868e9863802738b12abcf313cdce",
+      "significant_entries": 5995
+    },
+    {
+      "file": "graph_0088.npz",
+      "slot": 88,
+      "start": 25344,
+      "end": 27360,
+      "available": 27360,
+      "sha256": "3fc7a39c29ad70273136f588507f3c320a54cbbf1e4221a8138e8f6ec7a542fd",
+      "edges_sha256": "94d3f0ec90d533694f406281ac8bcabd641496f445878c1b6e1af96d4ec2fd7a",
+      "significant_entries": 5913
+    },
+    {
+      "file": "graph_0089.npz",
+      "slot": 89,
+      "start": 25632,
+      "end": 27648,
+      "available": 27648,
+      "sha256": "c405167a15f89116f0ae68b38e1c9ae7372826c4e206e364c2803be5b42e09b6",
+      "edges_sha256": "68019df7951fe7b35e0e9bf327fa071c0852099a57b1107b54b7e48220fb6947",
+      "significant_entries": 5801
+    },
+    {
+      "file": "graph_0090.npz",
+      "slot": 90,
+      "start": 25920,
+      "end": 27936,
+      "available": 27936,
+      "sha256": "0e8a8120a8b5801046d1c12646dfc5955e164e4c6520557ae9f07ece7c1a1806",
+      "edges_sha256": "1c82bab103f3f08ab3c1e247516bbd6dd44c88e81604d8a210ace99bc3a4b0d7",
+      "significant_entries": 6405
+    },
+    {
+      "file": "graph_0091.npz",
+      "slot": 91,
+      "start": 26208,
+      "end": 28224,
+      "available": 28224,
+      "sha256": "7958b331129dec885b400546654152c41810a099d56b605e3a292b1d86f7bec0",
+      "edges_sha256": "6da77d29aa3088d72b27af119239767a94f6b001429a7a0fae7fe9ba503b1798",
+      "significant_entries": 6306
+    },
+    {
+      "file": "graph_0092.npz",
+      "slot": 92,
+      "start": 26496,
+      "end": 28512,
+      "available": 28512,
+      "sha256": "e98c77e88e89974fc8e70669fe03725afde381cbe4c98472d762a7f71b080098",
+      "edges_sha256": "b8e86f2181a22f6bd70102181be016837aa4205c63bbbec1a7ec8156bf8eabf5",
+      "significant_entries": 6569
+    },
+    {
+      "file": "graph_0093.npz",
+      "slot": 93,
+      "start": 26784,
+      "end": 28800,
+      "available": 28800,
+      "sha256": "ab7bc75396305ab8367b0344fecb0b9188816eeba876a73645e2b78eda1e1847",
+      "edges_sha256": "7f854fe3186ad313f93cd77adc538f03de8e8cec2516d1eb591d02629bdf24d8",
+      "significant_entries": 6705
+    },
+    {
+      "file": "graph_0094.npz",
+      "slot": 94,
+      "start": 27072,
+      "end": 29088,
+      "available": 29088,
+      "sha256": "92aa4e3984069d33f86dc3a74fbfb5297011d651a245199638b40f4e4c47c86c",
+      "edges_sha256": "386c847d970fa7bca03dafe3654bdf177d40fc0ce8bff6f874d0026fbe869599",
+      "significant_entries": 6439
+    },
+    {
+      "file": "graph_0095.npz",
+      "slot": 95,
+      "start": 27360,
+      "end": 29376,
+      "available": 29376,
+      "sha256": "1a5b151fb56f7d4588af3bc8f622c487ba85492d647d24c84c021d39c2f18d5f",
+      "edges_sha256": "638c9f0560f8d24d3767fd6fa744de829478cd63f2952155cb4a2a2032c8153e",
+      "significant_entries": 6422
+    },
+    {
+      "file": "graph_0096.npz",
+      "slot": 96,
+      "start": 27648,
+      "end": 29664,
+      "available": 29664,
+      "sha256": "0e5cb01bdf502c1024917f6ae6cdc68e2dd8425f81e8ecdbe28afd13e020c3a1",
+      "edges_sha256": "f36ab98709c06508a97feb7739772e79986cbf1e1761ccf5096d0eeb021a9266",
+      "significant_entries": 6742
+    },
+    {
+      "file": "graph_0097.npz",
+      "slot": 97,
+      "start": 27936,
+      "end": 29952,
+      "available": 29952,
+      "sha256": "cf7aa44359023b9ec64606f1cb8505cf471a5b8f08a4a5ab994493066c58cb6c",
+      "edges_sha256": "1bd1ab72b040de8f3e237b267d3766a23ad90a44144b364c2ec7ad971dcf3364",
+      "significant_entries": 7360
+    },
+    {
+      "file": "graph_0098.npz",
+      "slot": 98,
+      "start": 28224,
+      "end": 30240,
+      "available": 30240,
+      "sha256": "41adb92dbd647a4ee1a7b0df6a0d13a235f318a14c3254ee799b6ea60160af4f",
+      "edges_sha256": "4ea1ba2f78006101ca9e25041c77b03326c0149628dc10634c32043771c49211",
+      "significant_entries": 6545
+    },
+    {
+      "file": "graph_0099.npz",
+      "slot": 99,
+      "start": 28512,
+      "end": 30528,
+      "available": 30528,
+      "sha256": "0ccda1d30ff231e704b7507b67652fde4daba01f02f854a86a42331863798823",
+      "edges_sha256": "11814a6989d77edc0e78572f1cdc632be0495702b4484d7945169c4548bcec5f",
+      "significant_entries": 6497
+    },
+    {
+      "file": "graph_0100.npz",
+      "slot": 100,
+      "start": 28800,
+      "end": 30816,
+      "available": 30816,
+      "sha256": "99ceb9eaeb5ca75cf56fd572948ebb6df0a401bf94ff20e2da9fb65b65c4632f",
+      "edges_sha256": "bf7263a06d1ae081eca55bc2cd9cac55608811b4f8417b1214caeed4b6939ab7",
+      "significant_entries": 7280
+    },
+    {
+      "file": "graph_0101.npz",
+      "slot": 101,
+      "start": 29088,
+      "end": 31104,
+      "available": 31104,
+      "sha256": "7e46b649782de781dd69df0ca2e423fc1149bfe9862fd5e71cdaff4f8b6cd828",
+      "edges_sha256": "9c5be7b892e67b13b3eef58613a7a7b0a5f83c6f357f1b18b2cb275d36ed3cf9",
+      "significant_entries": 7711
+    },
+    {
+      "file": "graph_0102.npz",
+      "slot": 102,
+      "start": 29376,
+      "end": 31392,
+      "available": 31392,
+      "sha256": "fc2d02edff5a0c5712001d7bee04a84064a48b5a0fcfdb7d404dc35652a28a92",
+      "edges_sha256": "245fa7f9367ce6f57bfe12c7ce1539a59ec3790ffd1e00b4dcc3e380f2f07524",
+      "significant_entries": 7246
+    },
+    {
+      "file": "graph_0103.npz",
+      "slot": 103,
+      "start": 29664,
+      "end": 31680,
+      "available": 31680,
+      "sha256": "5cc53205d74873395df11e5fed2addaa0c853e0735f700111f856fb5e3fe63d4",
+      "edges_sha256": "f0f7984ad7c3c784d04f4fae3add9310d2de1ea873d9191ae64e9b28a38af66c",
+      "significant_entries": 5855
+    },
+    {
+      "file": "graph_0104.npz",
+      "slot": 104,
+      "start": 29952,
+      "end": 31968,
+      "available": 31968,
+      "sha256": "ecd9724e75352ff06776a8cf2c9296accacbbda5442b10de62903750f39aa777",
+      "edges_sha256": "137d59cd90965106ad79620195b1ab02b39d0ec8088f5fd49914a7d3cd246685",
+      "significant_entries": 5736
+    },
+    {
+      "file": "graph_0105.npz",
+      "slot": 105,
+      "start": 30240,
+      "end": 32256,
+      "available": 32256,
+      "sha256": "229f2e76a94ff7ccf72abd15b0fa399e03098b538f64a28a9b6d01a405c92de5",
+      "edges_sha256": "464646dedcc401e0ae8ba3ba4dbdcbf7d725cb14d903b8337346310dd85a4e35",
+      "significant_entries": 5896
+    },
+    {
+      "file": "graph_0106.npz",
+      "slot": 106,
+      "start": 30528,
+      "end": 32544,
+      "available": 32544,
+      "sha256": "2e544142be2a15e718780940c34d8e58158db4dc7b98103f2fb11bdd37b0afeb",
+      "edges_sha256": "010e207d04057a42f50034bcb7c9d07524f85709072d9161f32afeb68a02d961",
+      "significant_entries": 6214
+    },
+    {
+      "file": "graph_0107.npz",
+      "slot": 107,
+      "start": 30816,
+      "end": 32832,
+      "available": 32832,
+      "sha256": "8afd50eb968ae8b362b8d4fc23803ae1de699661dc15e757a159398c0827ae1d",
+      "edges_sha256": "90d90745b8757c78f16d7fe0eae628aea34bfb379926d651b4923642d0460986",
+      "significant_entries": 5915
+    },
+    {
+      "file": "graph_0108.npz",
+      "slot": 108,
+      "start": 31104,
+      "end": 33120,
+      "available": 33120,
+      "sha256": "ba69af54cb8331b05ce52f07389f52d547ea38b9cb5187e5ef10c5f16870010a",
+      "edges_sha256": "a462db6d3e8fa5ae15b0a5eb24cc7e93c5c9581a9028439e27377a066a0e4f34",
+      "significant_entries": 6033
+    },
+    {
+      "file": "graph_0109.npz",
+      "slot": 109,
+      "start": 31392,
+      "end": 33408,
+      "available": 33408,
+      "sha256": "1227d6ecec654ad7157a9014ccb82a9dcfb97547a3ec9793cbd73656a38c37c5",
+      "edges_sha256": "c7749aef2ff3517e2f7937b7be98849e812c8f805de6d202f226aab020a20950",
+      "significant_entries": 5617
+    },
+    {
+      "file": "graph_0110.npz",
+      "slot": 110,
+      "start": 31680,
+      "end": 33696,
+      "available": 33696,
+      "sha256": "edb36d5a91aff8115c75ad80a50c7c596da8a518942ac725163062637790eae9",
+      "edges_sha256": "6c43514daa9e3c3e8a61debca89d1cd88eb5b5c59dd04696ce6c03c30a0bb14c",
+      "significant_entries": 6916
+    },
+    {
+      "file": "graph_0111.npz",
+      "slot": 111,
+      "start": 31968,
+      "end": 33984,
+      "available": 33984,
+      "sha256": "ccc144b00c0c11850a2428d81a8543e66eeeedd8df14d996771cc7999b811396",
+      "edges_sha256": "73641a7ce1b74e530aa2bed06ed549fab91c26800eaed15e7d48ad030b169bdd",
+      "significant_entries": 6533
+    },
+    {
+      "file": "graph_0112.npz",
+      "slot": 112,
+      "start": 32256,
+      "end": 34272,
+      "available": 34272,
+      "sha256": "dfa9674de38358ba4f07016f6bdb839ac2c11d9952b15b02823c61f7188a55e1",
+      "edges_sha256": "2d1c1312f720e3b032a20572a8a6e8732ffaaf7241447696f28d9a38818b8cb0",
+      "significant_entries": 6430
+    },
+    {
+      "file": "graph_0113.npz",
+      "slot": 113,
+      "start": 32544,
+      "end": 34560,
+      "available": 34560,
+      "sha256": "2744e32fb172e1f889c06fcd052d0f254f5634c938071c078d257571b5e0f811",
+      "edges_sha256": "7d88175d6f3b216ea2ab87d6b805c6744d1e0b9e26e8292314085030b8a93ece",
+      "significant_entries": 5822
+    },
+    {
+      "file": "graph_0114.npz",
+      "slot": 114,
+      "start": 32832,
+      "end": 34848,
+      "available": 34848,
+      "sha256": "e7ccc7a13d78f16cd828e3869ca40683b8e5d7a1e3bf5fe63c1c70da15f4fd2f",
+      "edges_sha256": "2e5ce7b61b12e158b18c277d250a80763104efe90e130212443ae4f8b6d00790",
+      "significant_entries": 5776
+    },
+    {
+      "file": "graph_0115.npz",
+      "slot": 115,
+      "start": 33120,
+      "end": 35136,
+      "available": 35136,
+      "sha256": "c08594fa360e8bdc9af2e6a008127b39db7accb85e4704d35bf70f377cc9daa9",
+      "edges_sha256": "5fa2ee90547c4edfc0ef882d989b807aad4601ec9b289313160329ca256f8952",
+      "significant_entries": 6004
+    },
+    {
+      "file": "graph_0116.npz",
+      "slot": 116,
+      "start": 33408,
+      "end": 35424,
+      "available": 35424,
+      "sha256": "9e47e6125db9fd512e82a2ec3ee1815b4747cebd7b765142c3349046876d0d3c",
+      "edges_sha256": "8ae56b0f26bd0d6ca6e90fe0fe62b6d073a6bb3c6c88dfb0ee215147c85d0bb3",
+      "significant_entries": 6115
+    },
+    {
+      "file": "graph_0117.npz",
+      "slot": 117,
+      "start": 33696,
+      "end": 35712,
+      "available": 35712,
+      "sha256": "0eb7fb3456ff3edfcb384d8554e797f7d00f84eb195d73d9551667b63ef966d1",
+      "edges_sha256": "ee8dfe555848468308c9c0deac1b6a045bd4a69ef80f4ee0428fdfd6473d802b",
+      "significant_entries": 6396
+    },
+    {
+      "file": "graph_0118.npz",
+      "slot": 118,
+      "start": 33984,
+      "end": 36000,
+      "available": 36000,
+      "sha256": "dbf652d2ad5b4dd39e5d5eef488e593219e3dc3a8220edd621ad4ba96f9277e2",
+      "edges_sha256": "6ca53e1c55bfd9724dab76030f343fd428b45ff82b4f48084c66744c12a198bb",
+      "significant_entries": 6199
+    },
+    {
+      "file": "graph_0119.npz",
+      "slot": 119,
+      "start": 34272,
+      "end": 36288,
+      "available": 36288,
+      "sha256": "6f70d04a67fb73719b0fd8f936d37e5c3b7d9daa5b81e97ba6b685435de73abb",
+      "edges_sha256": "e3a6493b20ad37ba867bc6af814572a2efdfc853fc1387e838cd670d195def0f",
+      "significant_entries": 5677
+    },
+    {
+      "file": "graph_0120.npz",
+      "slot": 120,
+      "start": 34560,
+      "end": 36576,
+      "available": 36576,
+      "sha256": "f2e2f336e670555448918a247783873e7e3905b1a1fa0b772ededa60f96cc4bd",
+      "edges_sha256": "6a60754462b5e55ef78d0ea818f8fd0bdcaed05d44f1079b4542b5838f384a57",
+      "significant_entries": 6372
+    },
+    {
+      "file": "graph_0121.npz",
+      "slot": 121,
+      "start": 34848,
+      "end": 36864,
+      "available": 36864,
+      "sha256": "9446a2171d44503a4dbee03dac8ec8aba07fee99f145b3b21d9202b767e1d1a3",
+      "edges_sha256": "652cbfc513591f39cfb9118e7a03f00efda3988c8230b17152b8830592467af4",
+      "significant_entries": 6294
+    },
+    {
+      "file": "graph_0122.npz",
+      "slot": 122,
+      "start": 35136,
+      "end": 37152,
+      "available": 37152,
+      "sha256": "ecfbe82e53cc8ecba1dd6c65a743d6de0959582c7f8b302dfe5a818cc9c6d3ed",
+      "edges_sha256": "e2ef55138d6586b5ccc256b232e257b712a8a7890c214aa7ea32c34bf90cf562",
+      "significant_entries": 5793
+    },
+    {
+      "file": "graph_0123.npz",
+      "slot": 123,
+      "start": 35424,
+      "end": 37440,
+      "available": 37440,
+      "sha256": "b67d12e80a1f29ffcf674dc3b53d6efed71f58c6d35028069cddcabf80cf9263",
+      "edges_sha256": "0ecdc3de7284f116af0bb3084bd321a657dad96fa89f1edcf671776029931b44",
+      "significant_entries": 5948
+    },
+    {
+      "file": "graph_0124.npz",
+      "slot": 124,
+      "start": 35712,
+      "end": 37728,
+      "available": 37728,
+      "sha256": "c447644a4bcd3c99ad4354b3fc4912bb43a08a916cf87639f32541719190e255",
+      "edges_sha256": "458806c2b86c4e7f979b8456318cee39b62e763088433170e843299d11d88624",
+      "significant_entries": 6621
+    },
+    {
+      "file": "graph_0125.npz",
+      "slot": 125,
+      "start": 36000,
+      "end": 38016,
+      "available": 38016,
+      "sha256": "c4453741fb1646aa72ba34850574da6c207353a8f61b8a67b50ec5cba5715567",
+      "edges_sha256": "f77dd1cb45a04b1f0852953975ab672ad0355c608d0efb7038d1d45dc9672c88",
+      "significant_entries": 6255
+    },
+    {
+      "file": "graph_0126.npz",
+      "slot": 126,
+      "start": 36288,
+      "end": 38304,
+      "available": 38304,
+      "sha256": "710f3b5a60ca1a807b6a0b17c898953ecba828a303ed857b8824b302647f55c0",
+      "edges_sha256": "9908e0310e95a6d6e3845f9825239e98fa5be435e07f85cfb8f296888fde3d1e",
+      "significant_entries": 6794
+    },
+    {
+      "file": "graph_0127.npz",
+      "slot": 127,
+      "start": 36576,
+      "end": 38592,
+      "available": 38592,
+      "sha256": "e1e2b114bec98e6828d4132d136b7434ae6e385c6b02df270aa7cd1e6f42504d",
+      "edges_sha256": "8746a0307df4739f0102acfba5b1d68e50ce61f18e7bfa77e870ca7c4dece382",
+      "significant_entries": 6390
+    },
+    {
+      "file": "graph_0128.npz",
+      "slot": 128,
+      "start": 36864,
+      "end": 38880,
+      "available": 38880,
+      "sha256": "b44d2c2db120e0b4bedd8420c8948fde696c6d048fe21ce4c9e344dfca1e427a",
+      "edges_sha256": "7ae33b67fe0d4d89599b34675bb8d4bc25edf97090bd0ee0f6e69a41e3988543",
+      "significant_entries": 6790
+    },
+    {
+      "file": "graph_0129.npz",
+      "slot": 129,
+      "start": 37152,
+      "end": 39168,
+      "available": 39168,
+      "sha256": "d6c2cd44a4c97be8bbf63e811b0d15d9d244f2d1aa058481b1034797e64ca0a4",
+      "edges_sha256": "54a5479ed3633528fcd6021e58ab5f5fab65dffb191576e23dd18085f6a79e94",
+      "significant_entries": 6637
+    },
+    {
+      "file": "graph_0130.npz",
+      "slot": 130,
+      "start": 37440,
+      "end": 39456,
+      "available": 39456,
+      "sha256": "43aaa00709a0eab1a1bb5b4196c15ca81f9f79469a21614bae6d572713281897",
+      "edges_sha256": "ba4a0973f0c852116ab1cc2b700bde6d23ec9ad936138b72537fa226d997d5f0",
+      "significant_entries": 6267
+    },
+    {
+      "file": "graph_0131.npz",
+      "slot": 131,
+      "start": 37728,
+      "end": 39744,
+      "available": 39744,
+      "sha256": "613fb080fc77b70d450ce131d820883a47a0e14b4bb980578e05b4fcb8eebd49",
+      "edges_sha256": "f69806f5546d4a6cda6b0de7ee4396c3b7733cbb65796a6773474a692ef5ec24",
+      "significant_entries": 6337
+    },
+    {
+      "file": "graph_0132.npz",
+      "slot": 132,
+      "start": 38016,
+      "end": 40032,
+      "available": 40032,
+      "sha256": "abba384c575c2060ea81e93b6a80a95a0b0fc956f8ce5dacc06a8f4809036f2b",
+      "edges_sha256": "b8dd009f4fdca423767cc62be0bcd1933f61aac461f765996a5163f213dc8623",
+      "significant_entries": 6450
+    },
+    {
+      "file": "graph_0133.npz",
+      "slot": 133,
+      "start": 38304,
+      "end": 40320,
+      "available": 40320,
+      "sha256": "e76654a917f3aecff537ad6f8bb553e8be40c6a684e45d3b8ba4448f07e89b88",
+      "edges_sha256": "466fa10812170aefe37bd86c5b2a3f7b12bc408dc1a2441c5c0ec4024823b8db",
+      "significant_entries": 6475
+    },
+    {
+      "file": "graph_0134.npz",
+      "slot": 134,
+      "start": 38592,
+      "end": 40608,
+      "available": 40608,
+      "sha256": "c5685ca513cf85c9833823c5a28166acdc33fe4666cbf2e5f04caaaf47650002",
+      "edges_sha256": "e69f50907af2683d7a60404a2cd58ad1331b155cc464a301e9d21854e28716fa",
+      "significant_entries": 7050
+    },
+    {
+      "file": "graph_0135.npz",
+      "slot": 135,
+      "start": 38880,
+      "end": 40896,
+      "available": 40896,
+      "sha256": "3357e4eb36a608c6f690daad55856be829bc9aa565bf2c886a45928d3da18451",
+      "edges_sha256": "0a793e4ef18e13939d0437ffde0f36872966e3f8f2efd7145a80b674f2dc6d0f",
+      "significant_entries": 7682
+    },
+    {
+      "file": "graph_0136.npz",
+      "slot": 136,
+      "start": 39168,
+      "end": 41184,
+      "available": 41184,
+      "sha256": "f89e185ac13b9ee23cf0c0c95792824d3e0fc04848b6660e48c0f221ca009eed",
+      "edges_sha256": "5bbfb867a0633afaee5ce843e3468361ec4fad86aeb2d79493cdad53b1c2d4e5",
+      "significant_entries": 6796
+    },
+    {
+      "file": "graph_0137.npz",
+      "slot": 137,
+      "start": 39456,
+      "end": 41472,
+      "available": 41472,
+      "sha256": "f820fcaa549a87a04f1a773bc4c1d258158141ab07b212c93768340e39c839df",
+      "edges_sha256": "618778a817d6eac49219a905376c6d28ad6e45169e0f3a3151522aad4d0a948b",
+      "significant_entries": 6915
+    },
+    {
+      "file": "graph_0138.npz",
+      "slot": 138,
+      "start": 39744,
+      "end": 41760,
+      "available": 41760,
+      "sha256": "580831f9082c2b1a5432c33f61deaf5b1f22c464bfc4d9a0294f934f625374f8",
+      "edges_sha256": "4b7d2c239e79ef0866c2294a59944f40c2e8c88219f41a3e63506baea7bcfbd6",
+      "significant_entries": 7045
+    },
+    {
+      "file": "graph_0139.npz",
+      "slot": 139,
+      "start": 40032,
+      "end": 42048,
+      "available": 42048,
+      "sha256": "6fd34aa3c6d0f857a79d11aa8f4941bb5980c92245416749c6c75019c2fcb72b",
+      "edges_sha256": "ec64ec3c1c7dea0e8aff6d9dedf9d00fdd1a3fa4c7865530e77834ac11d29d42",
+      "significant_entries": 6946
+    },
+    {
+      "file": "graph_0140.npz",
+      "slot": 140,
+      "start": 40320,
+      "end": 42336,
+      "available": 42336,
+      "sha256": "f14d018afbce922a7ebb8152acd0b8ae5998868023a8eb9f0df2a04a9017baf5",
+      "edges_sha256": "4d2dea7d7ba584bad037a1fcd6845e492f8719c9e68fa4120aead971ed68d713",
+      "significant_entries": 6537
+    },
+    {
+      "file": "graph_0141.npz",
+      "slot": 141,
+      "start": 40608,
+      "end": 42624,
+      "available": 42624,
+      "sha256": "6adc6f65206d85a2073114484c6f36ae707c6d3704a0c383cf96a1aad18f7fe1",
+      "edges_sha256": "6337c89be54f9f64e6647eddafa836afb01715bb63d83a40ead07c9692e5faee",
+      "significant_entries": 6474
+    },
+    {
+      "file": "graph_0142.npz",
+      "slot": 142,
+      "start": 40896,
+      "end": 42912,
+      "available": 42912,
+      "sha256": "e4ef4eb65f17235ce0fc4e1a162982d10d124b53523f0b52c256dbc65ec8cd2c",
+      "edges_sha256": "44be6ec7e90d0227ec578e9be4be65520b76e61968396fb1ceb7826e31c0fe7c",
+      "significant_entries": 5288
+    },
+    {
+      "file": "graph_0143.npz",
+      "slot": 143,
+      "start": 41184,
+      "end": 43200,
+      "available": 43200,
+      "sha256": "c96f1a2426ca95677571130be267433d68f7ff68c5c8e016cde5bf22f399a6f1",
+      "edges_sha256": "e51dab3e671208c7fdd1321a2498c1470ccc7bb57d7d59dd7a2ee35244b3c57a",
+      "significant_entries": 4995
+    },
+    {
+      "file": "graph_0144.npz",
+      "slot": 144,
+      "start": 41472,
+      "end": 43488,
+      "available": 43488,
+      "sha256": "1fc1e8347c23e06cc1ea5096c40e41a3fcd08e06cd0d800361d7bf82defaf247",
+      "edges_sha256": "cb295d52657a3c0e82aa328dee9211dc1342925cfeaf6eeac40d96018164d331",
+      "significant_entries": 4947
+    },
+    {
+      "file": "graph_0145.npz",
+      "slot": 145,
+      "start": 41760,
+      "end": 43776,
+      "available": 43776,
+      "sha256": "d78353d090e0901139d00c88fd498a4a2d4e00a3bba9a43e01525423084e75fb",
+      "edges_sha256": "61cc5675c6ee8b7560d7b5e8ea0c586fa64157e36b4a78244c4aab2c51d20f33",
+      "significant_entries": 5021
+    },
+    {
+      "file": "graph_0146.npz",
+      "slot": 146,
+      "start": 42048,
+      "end": 44064,
+      "available": 44064,
+      "sha256": "cfb6b9c54fa471ae97c3ae6c1d33283f2132c734964332ddf91342c28f89e331",
+      "edges_sha256": "62ddf592d597d9789981ad68ff975d1057771ec0454e3a75003140ba7bdb7d53",
+      "significant_entries": 4970
+    },
+    {
+      "file": "graph_0147.npz",
+      "slot": 147,
+      "start": 42336,
+      "end": 44352,
+      "available": 44352,
+      "sha256": "844553f9f825a0e4d00fe7331387ae05bbbfe4d448d241683563782158c7b619",
+      "edges_sha256": "0c6f74601a202bbe6011a841957bad826dfa998e281b1faa2d6f942d335eee2d",
+      "significant_entries": 4664
+    },
+    {
+      "file": "graph_0148.npz",
+      "slot": 148,
+      "start": 42624,
+      "end": 44640,
+      "available": 44640,
+      "sha256": "f8c584b2b1f5a56881feb970f7c69da3e4d268a56aef931866a262160869e908",
+      "edges_sha256": "c9af39fe8ff9fc507b69a4255aff14cd4758c86a3e7b57c27b132311752d39df",
+      "significant_entries": 5306
+    },
+    {
+      "file": "graph_0149.npz",
+      "slot": 149,
+      "start": 42912,
+      "end": 44928,
+      "available": 44928,
+      "sha256": "db1a4d6e6c5d9c20e0966109dba9241409e289aaf079117c7bcf9ffdf06f8b70",
+      "edges_sha256": "6e935d9f1742e4703ed3736e1124c44ed84faef9866caa68150642a0d002c8e1",
+      "significant_entries": 6241
+    },
+    {
+      "file": "graph_0150.npz",
+      "slot": 150,
+      "start": 43200,
+      "end": 45216,
+      "available": 45216,
+      "sha256": "f0e81d4d2a650349c338ac203cefe551da129c45b9ae1dd4308c28c8adcc5ebb",
+      "edges_sha256": "4387698bf6393ca07e6073c0ca08cefc789b121efc27d183c2dbd47b0faca661",
+      "significant_entries": 5424
+    },
+    {
+      "file": "graph_0151.npz",
+      "slot": 151,
+      "start": 43488,
+      "end": 45504,
+      "available": 45504,
+      "sha256": "3863fe64f814cb1f1475cc629cdd42fee5f2f0f09a59f63c28697c0e79d63049",
+      "edges_sha256": "0d8b408a24f1fcca37fdcad33921449b69b278eb0ea27d26aaeb6297994df40c",
+      "significant_entries": 6207
+    },
+    {
+      "file": "graph_0152.npz",
+      "slot": 152,
+      "start": 43776,
+      "end": 45792,
+      "available": 45792,
+      "sha256": "881c0d0b2b43f21cfb9f99e84660bac7862c5e284fe2f72f3e221947063e92b8",
+      "edges_sha256": "b6eb73229bfcef0384e4eff41edd1bf6a7a551e158fee82c88b6f0c76154aedf",
+      "significant_entries": 6634
+    },
+    {
+      "file": "graph_0153.npz",
+      "slot": 153,
+      "start": 44064,
+      "end": 46080,
+      "available": 46080,
+      "sha256": "6e0b9067308501a7f7d96982cf30da60c36389a54e7bfcb0dcbda4bb860692f7",
+      "edges_sha256": "665ac87aee6990c317ea651af494b65083bd4bafb64f5f2e4fd6c538380811bb",
+      "significant_entries": 6777
+    },
+    {
+      "file": "graph_0154.npz",
+      "slot": 154,
+      "start": 44352,
+      "end": 46368,
+      "available": 46368,
+      "sha256": "70862de12f90e8926cfbda0f31ea273029bae5f4c937a818def6153913c24320",
+      "edges_sha256": "26e25ca190eb08492d70c0004a980e81b17ea54211a9a440da77370f5c9a698c",
+      "significant_entries": 6356
+    },
+    {
+      "file": "graph_0155.npz",
+      "slot": 155,
+      "start": 44640,
+      "end": 46656,
+      "available": 46656,
+      "sha256": "096f843361dd8953dd7ba1cf530791e54817303f1eb1986fecb9a0288e51a4f7",
+      "edges_sha256": "5e36f891c844698a7cc22b286fd6d34bdc1d7a29f73657eeb11f1bd14f045101",
+      "significant_entries": 6157
+    },
+    {
+      "file": "graph_0156.npz",
+      "slot": 156,
+      "start": 44928,
+      "end": 46944,
+      "available": 46944,
+      "sha256": "ef3b90e684e94e9716a4a48fb95a73dc707e5a4efe289201f9861ce7b369b47a",
+      "edges_sha256": "6e6e7533a6859abe2a207c82b38b86a2802dcdc1e037beafdfbdd2e06d5db158",
+      "significant_entries": 5939
+    },
+    {
+      "file": "graph_0157.npz",
+      "slot": 157,
+      "start": 45216,
+      "end": 47232,
+      "available": 47232,
+      "sha256": "559945ea592884fd8772c6d95d3435bab7fefe48ef72481a2ebc58b7cce6c1b7",
+      "edges_sha256": "aa394f3fb92c4052cc967e367a44f2be1ad0f54e7222131f7e96177e839a48a6",
+      "significant_entries": 6866
+    },
+    {
+      "file": "graph_0158.npz",
+      "slot": 158,
+      "start": 45504,
+      "end": 47520,
+      "available": 47520,
+      "sha256": "b5855bacd58ab215fba0d57a9824d843de80b381131862be2c33aedfa57621ff",
+      "edges_sha256": "615d3a89487ce4368432973a710a5275e318cd3acec33f2187ec5aada1ab66d6",
+      "significant_entries": 6939
+    },
+    {
+      "file": "graph_0159.npz",
+      "slot": 159,
+      "start": 45792,
+      "end": 47808,
+      "available": 47808,
+      "sha256": "9261097884383d677abe62e59a133aa5a0a73fd95c710c1ccd4a6aa026858ec8",
+      "edges_sha256": "19d9871064bd48de28e8256ab503698fd4e01ce8e59d0f982d66eba0806c0b65",
+      "significant_entries": 7189
+    },
+    {
+      "file": "graph_0160.npz",
+      "slot": 160,
+      "start": 46080,
+      "end": 48096,
+      "available": 48096,
+      "sha256": "839280cc7110919eeb1be70f83691798766b70188916fc4b71310fa3359bf58b",
+      "edges_sha256": "83365a46a73de661eee2e07b63ecc18e43f6d773f80078b84fda5a3bbd53e0b1",
+      "significant_entries": 6941
+    },
+    {
+      "file": "graph_0161.npz",
+      "slot": 161,
+      "start": 46368,
+      "end": 48384,
+      "available": 48384,
+      "sha256": "8c6db5e88411a57f4cded70e74780c632dace68eeb2327031367ed3a3564bdb2",
+      "edges_sha256": "9e2912bcbfc664c69ffda5e4f995059e92d2b2fb21df19a5693d1457bb0aa1a9",
+      "significant_entries": 6862
+    },
+    {
+      "file": "graph_0162.npz",
+      "slot": 162,
+      "start": 46656,
+      "end": 48672,
+      "available": 48672,
+      "sha256": "b94133f96f7cb5bc578ac84127214317f79e7d32b028d153e6642723f13c99e4",
+      "edges_sha256": "4757c6f0f15afbbb5fd353601930515c9f61e8c4a59d56088edb2bb6714c307b",
+      "significant_entries": 7299
+    },
+    {
+      "file": "graph_0163.npz",
+      "slot": 163,
+      "start": 46944,
+      "end": 48960,
+      "available": 48960,
+      "sha256": "4191ebc6eef95cd00cbd2613b324c84f649e723913ea186b69b07df2ceeb093a",
+      "edges_sha256": "559dad0eaa0ef6c00e91f006df1ca2050edab7647707594a4da0e9faca5b545f",
+      "significant_entries": 7221
+    },
+    {
+      "file": "graph_0164.npz",
+      "slot": 164,
+      "start": 47232,
+      "end": 49248,
+      "available": 49248,
+      "sha256": "f7c86e266067eede8b72221fcf6de64d870044da027c3a0e67ffd3f787eb4dd3",
+      "edges_sha256": "782a2d617ae1da459f02af4c4f28c3dbc33fa002f98fdf3b0a5cd0598c3e9253",
+      "significant_entries": 7104
+    },
+    {
+      "file": "graph_0165.npz",
+      "slot": 165,
+      "start": 47520,
+      "end": 49536,
+      "available": 49536,
+      "sha256": "79a04daf41464f9362dab098387d9df00eb51b000f76ec225b98c63980d22190",
+      "edges_sha256": "5725227f97948c9b05bbca0eff4723453f11a4c373d72407577dc80bc4b8d19b",
+      "significant_entries": 7179
+    },
+    {
+      "file": "graph_0166.npz",
+      "slot": 166,
+      "start": 47808,
+      "end": 49824,
+      "available": 49824,
+      "sha256": "d95002159ad6406ffc801ca8213a3ac71820824b89ba83f289e3cc1af5eaf4ad",
+      "edges_sha256": "6a9718799f8ec37c33f0d94d3e41aabbd95e4276035279a2b847baca5ae27cbf",
+      "significant_entries": 7474
+    },
+    {
+      "file": "graph_0167.npz",
+      "slot": 167,
+      "start": 48096,
+      "end": 50112,
+      "available": 50112,
+      "sha256": "519c4afab2cc22ee20bf8bda14addba03cff7a76681c911dd0305a32181d4754",
+      "edges_sha256": "28e9bb410a8f7c81df2258c17ce400ed04288329e8386a9d88be5453ddbb4be5",
+      "significant_entries": 8016
+    },
+    {
+      "file": "graph_0168.npz",
+      "slot": 168,
+      "start": 48384,
+      "end": 50400,
+      "available": 50400,
+      "sha256": "96261359ef3666a4bb0546028a26b789cd7b2298abe126960931d683efb3bc35",
+      "edges_sha256": "5d3203a833a23762ee03722520e693351423ccd73e8960167238111e2bb0a77c",
+      "significant_entries": 8674
+    },
+    {
+      "file": "graph_0169.npz",
+      "slot": 169,
+      "start": 48672,
+      "end": 50688,
+      "available": 50688,
+      "sha256": "d349cf2bbbe205c66167f222b6705b8d2ee5d90635f916010d490298c2a67317",
+      "edges_sha256": "1d6a145dbcfe2c878fc8bf2e94d0c29ee4ce958df72506b9b207725417bb0b32",
+      "significant_entries": 8876
+    },
+    {
+      "file": "graph_0170.npz",
+      "slot": 170,
+      "start": 48960,
+      "end": 50976,
+      "available": 50976,
+      "sha256": "f0039f8275816c5f4b77038166821c4cf4bf6039987697bd3a7faa7ce3e5e2e3",
+      "edges_sha256": "42a160ee28bfce5f07fa32f993f3d3f6f3d9b3b230b6da2930e25e9d52d274be",
+      "significant_entries": 8144
+    },
+    {
+      "file": "graph_0171.npz",
+      "slot": 171,
+      "start": 49248,
+      "end": 51264,
+      "available": 51264,
+      "sha256": "4568e17ccce3f3b46c79cad3b0145a8c2d03ef416e926f7f1c6189eb83e17dde",
+      "edges_sha256": "85bc91d1d6fe5c3addf93b4e00f5ac078f93cb60c7bc15f9a47ef40c7e577680",
+      "significant_entries": 8083
+    },
+    {
+      "file": "graph_0172.npz",
+      "slot": 172,
+      "start": 49536,
+      "end": 51552,
+      "available": 51552,
+      "sha256": "e31edd8bd3f6f8828c71ed1076fd710a349be04e149afce384549c058334ed37",
+      "edges_sha256": "b835f97dea4f6659cb8623e7dfe0f11c20a407906f7014e69bf0f873dedc7b47",
+      "significant_entries": 7284
+    },
+    {
+      "file": "graph_0173.npz",
+      "slot": 173,
+      "start": 49824,
+      "end": 51840,
+      "available": 51840,
+      "sha256": "a5e8d8ce3b01f5d181cda1b951ebf1067da9fdbf5c39c58f86cb7d127416162f",
+      "edges_sha256": "c938b0dcdec8f451d3caf58c7671c6ffb61fda2db3285792c2b49dcb40ecf8ce",
+      "significant_entries": 7308
+    },
+    {
+      "file": "graph_0174.npz",
+      "slot": 174,
+      "start": 50112,
+      "end": 52128,
+      "available": 52128,
+      "sha256": "c9cd9931f1d74d3729a996edc905eb6b9db461c3799f6aa9a7a1c4152dfbeb9f",
+      "edges_sha256": "74b594ee44aff7253fcc587cc9da1fe75254762ad29cf3aefcf51e3142da7076",
+      "significant_entries": 7188
+    },
+    {
+      "file": "graph_0175.npz",
+      "slot": 175,
+      "start": 50400,
+      "end": 52416,
+      "available": 52416,
+      "sha256": "0e4941dc2bcf43668e413dc9acb3c229b38cde6e57f7b1e58bc843369e8b244c",
+      "edges_sha256": "5fade46f02394ff3e8ee0bf1a7a0b9d1ed4d48057cd418bef412a35cf72edc03",
+      "significant_entries": 7826
+    },
+    {
+      "file": "graph_0176.npz",
+      "slot": 176,
+      "start": 50688,
+      "end": 52704,
+      "available": 52704,
+      "sha256": "8c31abc1a326e762b969e751492331e393ea33d54a4740b56692098a771a01b7",
+      "edges_sha256": "6bfa4afa0d7bd0fb64d803fcea92e39b89632902bacc710d7b42824b2ca3f3b0",
+      "significant_entries": 7558
+    },
+    {
+      "file": "graph_0177.npz",
+      "slot": 177,
+      "start": 50976,
+      "end": 52992,
+      "available": 52992,
+      "sha256": "52880e63194e38a4e0f7aeeb372048193bf81a93d45621d24116e86e59986ad1",
+      "edges_sha256": "4a33494138ff9222c6511d7addc597b966f15e50badc55dd88bb1cee9796e199",
+      "significant_entries": 7182
+    },
+    {
+      "file": "graph_0178.npz",
+      "slot": 178,
+      "start": 51264,
+      "end": 53280,
+      "available": 53280,
+      "sha256": "36533596a36f1365196dd3fb362863f7c27d3c9c4df38a48d52951271954ab93",
+      "edges_sha256": "83720d49ced79a15931437dc094043bb618d064d85dfc7de8779dc1ecad34651",
+      "significant_entries": 6532
+    },
+    {
+      "file": "graph_0179.npz",
+      "slot": 179,
+      "start": 51552,
+      "end": 53568,
+      "available": 53568,
+      "sha256": "7198730e31f8bab62ff48fd9f9cec11f6c52b15a5349fda1b67b88bd42b19681",
+      "edges_sha256": "d8b0c393ba5f81036eede37cbbbfd5c63c8f1cbfee2c50ba9261596538eabe61",
+      "significant_entries": 5801
+    },
+    {
+      "file": "graph_0180.npz",
+      "slot": 180,
+      "start": 51840,
+      "end": 53856,
+      "available": 53856,
+      "sha256": "50f082e3b4f1709b95183d8e1d1ec8d034fb35b19b98232329155733894eceab",
+      "edges_sha256": "4131e96aa558e60912fe9a740944d0fa8e4119b4d5bdf7d8c01cfade2bd9834e",
+      "significant_entries": 5615
+    },
+    {
+      "file": "graph_0181.npz",
+      "slot": 181,
+      "start": 52128,
+      "end": 54144,
+      "available": 54144,
+      "sha256": "422e5904e92f3881a120a1d99602cd0500b49154a54fc4ddfa159db09fb827db",
+      "edges_sha256": "143e765573db7af6b05a22bb88456f27132c902ea7c0432ecb085d0ad14cadad",
+      "significant_entries": 6197
+    },
+    {
+      "file": "graph_0182.npz",
+      "slot": 182,
+      "start": 52416,
+      "end": 54432,
+      "available": 54432,
+      "sha256": "40594c948462c6a4b42e620794c9298e4e244ca89b742607b781b348c9a24b54",
+      "edges_sha256": "e4e98f9231441452ccc9e4bbb17619d807e300c68465984456d228cf6109791c",
+      "significant_entries": 6271
+    },
+    {
+      "file": "graph_0183.npz",
+      "slot": 183,
+      "start": 52704,
+      "end": 54720,
+      "available": 54720,
+      "sha256": "e0c39e82288803cfe8752bf9e0bf01a71e29eb02e7ba1fa3a3dadbecc5da0f3d",
+      "edges_sha256": "9e24f53bf89687995cf1695b1adb848d734e3b7c1b446e37520da15bd504db68",
+      "significant_entries": 6305
+    },
+    {
+      "file": "graph_0184.npz",
+      "slot": 184,
+      "start": 52992,
+      "end": 55008,
+      "available": 55008,
+      "sha256": "c9b62485a7fe327c9cc739cf70a54eb52cfa7b1ab2c328c246fdd411c9a1981d",
+      "edges_sha256": "31d306294a2543d263f91c5e3c21f0466c5e58f7fe7812dc5c8c92adcd525de4",
+      "significant_entries": 6530
+    },
+    {
+      "file": "graph_0185.npz",
+      "slot": 185,
+      "start": 53280,
+      "end": 55296,
+      "available": 55296,
+      "sha256": "212debf5e57a247cbfb21a0caa79f2ca7d6f5cdd506c4e82d9ddee297b77a896",
+      "edges_sha256": "c02bcce45474e1253224bf760cd4f8fba349daec9ea7376da12cfa10246ccdd4",
+      "significant_entries": 7848
+    },
+    {
+      "file": "graph_0186.npz",
+      "slot": 186,
+      "start": 53568,
+      "end": 55584,
+      "available": 55584,
+      "sha256": "8a320fe87413a5fa958e3f0c220f9567f1a21f3de8077656330afc887fdd456e",
+      "edges_sha256": "d013a49b4159417d61c512f62fdf451c6f1aa13dcb93b7c9399af4e56ec9f7ac",
+      "significant_entries": 7336
+    },
+    {
+      "file": "graph_0187.npz",
+      "slot": 187,
+      "start": 53856,
+      "end": 55872,
+      "available": 55872,
+      "sha256": "6bfb50afa738158f05d46ea0a3807a55f409742a9f88f08107420ad6035369d1",
+      "edges_sha256": "b142febaaca573675a62be11b2e96158f865ded60ea8e50c5bf33108ece2d9dd",
+      "significant_entries": 6916
+    },
+    {
+      "file": "graph_0188.npz",
+      "slot": 188,
+      "start": 54144,
+      "end": 56160,
+      "available": 56160,
+      "sha256": "d074885f45f80d384f92c21a2ab09cbe23bb79aee911eff6a31100607ebf4def",
+      "edges_sha256": "af7fc1a702f2e0ee539645cfd64ade2bd41331e9513763bd96361422d249082b",
+      "significant_entries": 6680
+    },
+    {
+      "file": "graph_0189.npz",
+      "slot": 189,
+      "start": 54432,
+      "end": 56448,
+      "available": 56448,
+      "sha256": "d1dd0daa879e5f0846876940c102f17a19abf7eb7e93a3083c25400cb7496439",
+      "edges_sha256": "15daeb7fc96450d711e30e127427f8ffb0be633352aff3d10c0ce0625d5897e6",
+      "significant_entries": 7110
+    },
+    {
+      "file": "graph_0190.npz",
+      "slot": 190,
+      "start": 54720,
+      "end": 56736,
+      "available": 56736,
+      "sha256": "bd375a20b7c0891723e15df045cd14b33df7821a36e0890046c05bcbdf315b81",
+      "edges_sha256": "7f827ded510e4e0525979e3ebacb80cee4c16863e33be8ca18e995321de199e0",
+      "significant_entries": 6996
+    },
+    {
+      "file": "graph_0191.npz",
+      "slot": 191,
+      "start": 55008,
+      "end": 57024,
+      "available": 57024,
+      "sha256": "b0c2782cc768cfdc52490214624ee6f722756cb9c33cbd2283f532e4c8cb6fbd",
+      "edges_sha256": "ff2d44e75c0b0f0a5662751641c84641dd0ace05bacc8c03d6af8097e1498866",
+      "significant_entries": 7258
+    },
+    {
+      "file": "graph_0192.npz",
+      "slot": 192,
+      "start": 55296,
+      "end": 57312,
+      "available": 57312,
+      "sha256": "92bb5fb7b3d9a4c0f9b2235b5757a6d87c9ee28fcdce5d3632ef108be21abbc6",
+      "edges_sha256": "4546900fbcc05ba591dbc0778c52dd58c100b5914001534abd0ffd41c1e40f36",
+      "significant_entries": 6937
+    },
+    {
+      "file": "graph_0193.npz",
+      "slot": 193,
+      "start": 55584,
+      "end": 57600,
+      "available": 57600,
+      "sha256": "7c5eef5c48cce48bd1cf004ce4920a272bc6402298cced29962b5298ca509ae5",
+      "edges_sha256": "2d93963664fa421ea08cfb7a795bba69120bd651472dd92f4fe13d1583c0d594",
+      "significant_entries": 7346
+    },
+    {
+      "file": "graph_0194.npz",
+      "slot": 194,
+      "start": 55872,
+      "end": 57888,
+      "available": 57888,
+      "sha256": "86c75a773021e620dffa052e1907385247905b34372c99a1bc4d390a33625f49",
+      "edges_sha256": "0e176070a03a22c71d2cbe88f7e55e2c147830e96314fdde5733695529bfcbe6",
+      "significant_entries": 6768
+    },
+    {
+      "file": "graph_0195.npz",
+      "slot": 195,
+      "start": 56160,
+      "end": 58176,
+      "available": 58176,
+      "sha256": "421f0322e1e0032781278983053c19b2f5e6dc7c3f6b5c5f3b4334c510526385",
+      "edges_sha256": "bb2ee6049a9f839e1dee46c7da3b07cbff55fb3d7ef74d642a26327f25672135",
+      "significant_entries": 6668
+    },
+    {
+      "file": "graph_0196.npz",
+      "slot": 196,
+      "start": 56448,
+      "end": 58464,
+      "available": 58464,
+      "sha256": "a1efe4fbc0b2642ffaf49e4afefa8382bb7886309e3cafb8657b63cfc18bd651",
+      "edges_sha256": "5f4616618ed6dd87c40c645adb5be2bb2251c486f1ebaac47e4a65e1f43a4734",
+      "significant_entries": 6699
+    },
+    {
+      "file": "graph_0197.npz",
+      "slot": 197,
+      "start": 56736,
+      "end": 58752,
+      "available": 58752,
+      "sha256": "dbe9afbdb13d69caa6b1b3aac00e817b33127075305ebc20a9da08143dec464a",
+      "edges_sha256": "e8ec4b860373b917349b2a53da405e4da8eec2af9173dd3dc91cdd3b2cf38127",
+      "significant_entries": 6500
+    },
+    {
+      "file": "graph_0198.npz",
+      "slot": 198,
+      "start": 57024,
+      "end": 59040,
+      "available": 59040,
+      "sha256": "db9ccf2f1f0138b1124256d7c7d538f17416f8bc33a8e7b1304883e429db0607",
+      "edges_sha256": "07e05fda06e912dc62dea97bfcaba3d55e26f9dc53324de63f3e4d4dd2efde43",
+      "significant_entries": 6884
+    },
+    {
+      "file": "graph_0199.npz",
+      "slot": 199,
+      "start": 57312,
+      "end": 59328,
+      "available": 59328,
+      "sha256": "4abce37045ac45d777fbae7c96592db1803d03d5da2de021ee84d5f1aaa77eb5",
+      "edges_sha256": "701eac2a2764da79426dab290578e3e20b0d8c28eda6280bb57bc11d5451aa66",
+      "significant_entries": 5908
+    },
+    {
+      "file": "graph_0200.npz",
+      "slot": 200,
+      "start": 57600,
+      "end": 59616,
+      "available": 59616,
+      "sha256": "773b9607a992caac8f7c477bdbf38053715be585249ffb4d46fa621053b26e59",
+      "edges_sha256": "4e3bed1a7f938d5c62106a691af1f86abba3b925a11f4202f151b1214c2f0a4f",
+      "significant_entries": 6462
+    },
+    {
+      "file": "graph_0201.npz",
+      "slot": 201,
+      "start": 57888,
+      "end": 59904,
+      "available": 59904,
+      "sha256": "5756a589179aacdbc904024a4f5bbe9947374b2cf9dc91087619063c35baba48",
+      "edges_sha256": "0baeb21c69792e78cac1c0e30f2b8de82c63e9bee19e40989a09cd6aef7f2a9d",
+      "significant_entries": 6045
+    },
+    {
+      "file": "graph_0202.npz",
+      "slot": 202,
+      "start": 58176,
+      "end": 60192,
+      "available": 60192,
+      "sha256": "c1eb306fea859474d3891c8ff209e2203a665848d4b852c18e41aaf4c114191c",
+      "edges_sha256": "ebb54a0b75eda8a52cde4ef8b20b72caa7f2776d7ad921be3e848b29c02762e7",
+      "significant_entries": 6499
+    },
+    {
+      "file": "graph_0203.npz",
+      "slot": 203,
+      "start": 58464,
+      "end": 60480,
+      "available": 60480,
+      "sha256": "498550807a478a229585b0fc306dac3fe14a17ae47a0360d8df4e4ff3d181942",
+      "edges_sha256": "2bf0f61ed9edee68dc14be0ae47f1fc9119569a9f5eaee63db93bebb58e95359",
+      "significant_entries": 6364
+    },
+    {
+      "file": "graph_0204.npz",
+      "slot": 204,
+      "start": 58752,
+      "end": 60768,
+      "available": 60768,
+      "sha256": "8e6ef20eab0bd4509d560bec64714ed4b9ffdd0d6eb4c09acaa5bfcd6f2bbbd2",
+      "edges_sha256": "f4343b2296dfd9bbbcb2a3568aacf8e8b901b82cc562a5d1fe4f7c4a7e24d4dc",
+      "significant_entries": 7074
+    },
+    {
+      "file": "graph_0205.npz",
+      "slot": 205,
+      "start": 59040,
+      "end": 61056,
+      "available": 61056,
+      "sha256": "88312b6bb13715fd8b311e7dcdf3c1be9243d822827aff8b94ffeb031ddccd6f",
+      "edges_sha256": "4c53694fb980ca56273247d96c90c9ba0d4327b7c8650edcec2eab390229f8fa",
+      "significant_entries": 6473
+    },
+    {
+      "file": "graph_0206.npz",
+      "slot": 206,
+      "start": 59328,
+      "end": 61344,
+      "available": 61344,
+      "sha256": "0af608b6415c321b1c451f07e58a7defe160c0a5ace10a9cd7fdc947b2ce37c2",
+      "edges_sha256": "8366dcf38a27428b57a47f2e51cd3900148ba4e18f25d05768eb8df234c4a2e9",
+      "significant_entries": 6179
+    },
+    {
+      "file": "graph_0207.npz",
+      "slot": 207,
+      "start": 59616,
+      "end": 61632,
+      "available": 61632,
+      "sha256": "5a8670ed289833f9a05dca7359d253ffa0a589fa1ceca4e89e5dc9f015d2710a",
+      "edges_sha256": "79ec34ae2b89c3a5a51a008a962d3fd91b0a9178ecd13634ab765a21ebc62ddc",
+      "significant_entries": 7186
+    },
+    {
+      "file": "graph_0208.npz",
+      "slot": 208,
+      "start": 59904,
+      "end": 61920,
+      "available": 61920,
+      "sha256": "a3eaccf7c6260c689d6caa12412caba40cd63624392c74c0825954dcdfe0ae14",
+      "edges_sha256": "4207717ebec84e44bd449ef8c1c2e430413f8b39ea5a34eee6c25708c4f8b2cb",
+      "significant_entries": 6994
+    },
+    {
+      "file": "graph_0209.npz",
+      "slot": 209,
+      "start": 60192,
+      "end": 62208,
+      "available": 62208,
+      "sha256": "2cb0b064f4c4d267d94eeaf97eff4f966018f3096de0737514a88d862e115169",
+      "edges_sha256": "d050ac8d096e3b4da8f5b73cd44c26707725f97f4484a7d1edf721be9c0faeec",
+      "significant_entries": 6557
+    },
+    {
+      "file": "graph_0210.npz",
+      "slot": 210,
+      "start": 60480,
+      "end": 62496,
+      "available": 62496,
+      "sha256": "26f9530455e0ad74f23440f7df24ec5c3766227a0297a1a6c3126c1cf5139f50",
+      "edges_sha256": "d56f02fffa2f24119dde29503663132e26fcb4aa685fa580df2bc43039e189bd",
+      "significant_entries": 6972
+    },
+    {
+      "file": "graph_0211.npz",
+      "slot": 211,
+      "start": 60768,
+      "end": 62784,
+      "available": 62784,
+      "sha256": "4c064cf9a9d263cf11ec2fa3475a98364604253d9ba52c5dd9d8aa429b272c21",
+      "edges_sha256": "d62f5b26ac052c84919819c79d3bb4be756983f99b698b0651b47429ba000711",
+      "significant_entries": 6972
+    },
+    {
+      "file": "graph_0212.npz",
+      "slot": 212,
+      "start": 61056,
+      "end": 63072,
+      "available": 63072,
+      "sha256": "a39aed918574f2b8e2dbf697bb16141a585651f0d898646f05f96f23b7f8aff6",
+      "edges_sha256": "e1ebc1d4de9dc3989908662e3692b7671290efa0298bad654a82f5ca5f616bfe",
+      "significant_entries": 6689
+    },
+    {
+      "file": "graph_0213.npz",
+      "slot": 213,
+      "start": 61344,
+      "end": 63360,
+      "available": 63360,
+      "sha256": "3e3bff8a163c2f5d90058443b85a09c1eb9cf6da5e34b82f4405957ac8b2e60e",
+      "edges_sha256": "ae1b8d1e61d6f5bd8feb6b4e3a80db9954730226a667f0bf5efc2c74b7ce6f66",
+      "significant_entries": 6575
+    },
+    {
+      "file": "graph_0214.npz",
+      "slot": 214,
+      "start": 61632,
+      "end": 63648,
+      "available": 63648,
+      "sha256": "b7170c4a2b6ffd01b93f6e0c5c58a6d8ea1bfa986acebe5f26e0b68b1c16cdd2",
+      "edges_sha256": "2224215ba3dd52ecb2f5fdee30b1ab6449ebde721d0db1159bb1348f038b3cbf",
+      "significant_entries": 6529
+    },
+    {
+      "file": "graph_0215.npz",
+      "slot": 215,
+      "start": 61920,
+      "end": 63936,
+      "available": 63936,
+      "sha256": "2022ff7445ca53d87b547570f1f5ed9e27bc4359e569365571072477c72f87cc",
+      "edges_sha256": "eb88a6f5f5726df148ef4f6c959da80f92ca33d6117bf68f4d155d6a04622e91",
+      "significant_entries": 6720
+    },
+    {
+      "file": "graph_0216.npz",
+      "slot": 216,
+      "start": 62208,
+      "end": 64224,
+      "available": 64224,
+      "sha256": "bb41d49dec19926f6f35761e6605ae1ae525f541a675452c8d9cbaea057eaaa6",
+      "edges_sha256": "dc2f528dc76af4f684ca76a1778378dda88116cc78ccd070e58b78ad9ecd40c5",
+      "significant_entries": 5590
+    },
+    {
+      "file": "graph_0217.npz",
+      "slot": 217,
+      "start": 62496,
+      "end": 64512,
+      "available": 64512,
+      "sha256": "2744749f2f3a8c10a24c26316985305f9973a4be23852bd871499ed9cf4f4748",
+      "edges_sha256": "a7d50d738880d8c8c1446e9372042eeb0c5bbe7aec1eb0d9917aa4475637bff2",
+      "significant_entries": 5683
+    },
+    {
+      "file": "graph_0218.npz",
+      "slot": 218,
+      "start": 62784,
+      "end": 64800,
+      "available": 64800,
+      "sha256": "c6b561f516ab0ee9a99e43051230b84ba9e69334920045ac3fa7c609cb90de56",
+      "edges_sha256": "87c4bffd46294afa8a66ff250f71742999d15829117f39a90b603c7749919d16",
+      "significant_entries": 5807
+    },
+    {
+      "file": "graph_0219.npz",
+      "slot": 219,
+      "start": 63072,
+      "end": 65088,
+      "available": 65088,
+      "sha256": "ed9e435dd140cfcc3d42594f920ac31fb4d0fc6de18e6973ae29cc6a880072ee",
+      "edges_sha256": "727c8562f32e41e0ac1b9812e37fd931092027eca4ed131bfa31d78b1aa7eee6",
+      "significant_entries": 6092
+    },
+    {
+      "file": "graph_0220.npz",
+      "slot": 220,
+      "start": 63360,
+      "end": 65376,
+      "available": 65376,
+      "sha256": "ce2dc3fe4af1eb86858faefd9e44e226e1deac84fe2fd3054efcdc73984b229a",
+      "edges_sha256": "37f3592e4f3a0f8660da133bd8c6fe5c2dbfb3a9ef2e248c8fa4d028e8e97942",
+      "significant_entries": 5416
+    },
+    {
+      "file": "graph_0221.npz",
+      "slot": 221,
+      "start": 63648,
+      "end": 65664,
+      "available": 65664,
+      "sha256": "9c1d019643de338a849dfd866d0a65a1a339a1922fd2f72e8eb292cc486c0030",
+      "edges_sha256": "7b2d4089cd70f49c022533a3ef4449985fa7b191c19bb3f59423413fdbe42f71",
+      "significant_entries": 6158
+    },
+    {
+      "file": "graph_0222.npz",
+      "slot": 222,
+      "start": 63936,
+      "end": 65952,
+      "available": 65952,
+      "sha256": "eb64b3171305c5890b885a9490891cc1fdee83c8a8c7925f6870fc592a334aeb",
+      "edges_sha256": "03a9f41c5a8e5a152248a3e947edae38f673ddd430783249e977de3427caa011",
+      "significant_entries": 5578
+    },
+    {
+      "file": "graph_0223.npz",
+      "slot": 223,
+      "start": 64224,
+      "end": 66240,
+      "available": 66240,
+      "sha256": "4807fff563aea6aa433465bafea036bdfab2fb734d391060789ef2855dce52b2",
+      "edges_sha256": "33f68827546ab4fa9d196add5009f97ab3040459340268fd0d7dd2969b78b04f",
+      "significant_entries": 6008
+    },
+    {
+      "file": "graph_0224.npz",
+      "slot": 224,
+      "start": 64512,
+      "end": 66528,
+      "available": 66528,
+      "sha256": "851acd051993c2ce7dcf2a1d6a48aa94ac04c55eab0bea6f39cbf860ca19245c",
+      "edges_sha256": "f6360391b9e2d94b1b2c99c048fbdb3107121686b2966059ed2bd571048a92ab",
+      "significant_entries": 5959
+    },
+    {
+      "file": "graph_0225.npz",
+      "slot": 225,
+      "start": 64800,
+      "end": 66816,
+      "available": 66816,
+      "sha256": "e45a68a7a5ea1e9d6de813e7b082b4638bb2e42d67590898ee79763a6bc194c8",
+      "edges_sha256": "69ac8f9b16e7b3fdcea8df7a50d932e591a2133985a4321b95a5fbdc2ee88c96",
+      "significant_entries": 6148
+    },
+    {
+      "file": "graph_0226.npz",
+      "slot": 226,
+      "start": 65088,
+      "end": 67104,
+      "available": 67104,
+      "sha256": "f74a1fa6925f5578074fd9daf1bcce1a198f00e7cb01f54020587e2aa50fc38c",
+      "edges_sha256": "59c80fb6d6ed4e03bf6f7ac9e8ef96151055398d6bfbaee41264e3e51618fbde",
+      "significant_entries": 5877
+    },
+    {
+      "file": "graph_0227.npz",
+      "slot": 227,
+      "start": 65376,
+      "end": 67392,
+      "available": 67392,
+      "sha256": "1ff9d49daf99ec14524f4e2f94aa4ab839de42a24b931fa40b120a6e479553ec",
+      "edges_sha256": "7d4f0990f358638fae2cf7e665e894fbe3d0ea64ebee8f48876bf80209d4dc79",
+      "significant_entries": 5647
+    },
+    {
+      "file": "graph_0228.npz",
+      "slot": 228,
+      "start": 65664,
+      "end": 67680,
+      "available": 67680,
+      "sha256": "430e3c948ae306cc4386817cfe94af75de09f25fd35774b4cc1838930bf4e240",
+      "edges_sha256": "92f86f873562d5567b5d677ca2e54a1895a838d2781c74794d45c744c5128728",
+      "significant_entries": 5706
+    },
+    {
+      "file": "graph_0229.npz",
+      "slot": 229,
+      "start": 65952,
+      "end": 67968,
+      "available": 67968,
+      "sha256": "ec3b29903800b5538d96f8500e55c0bf024e91cf3ca978624921cdfc2c01779e",
+      "edges_sha256": "e5c7d5092afe9df259f17dce3f758bf69c0e23921575cf953e9fe8a8b22c9a06",
+      "significant_entries": 6083
+    },
+    {
+      "file": "graph_0230.npz",
+      "slot": 230,
+      "start": 66240,
+      "end": 68256,
+      "available": 68256,
+      "sha256": "34f97cfbde83da51150e74f9181339f3d3c6f91dc3380bbb8007ae5d15f28c5e",
+      "edges_sha256": "c278b3fa776c901212a526bc308cb40c9d9dbce5e44a13b571bf8314e1f5032a",
+      "significant_entries": 6864
+    },
+    {
+      "file": "graph_0231.npz",
+      "slot": 231,
+      "start": 66528,
+      "end": 68544,
+      "available": 68544,
+      "sha256": "aedc529801487e306a55aed70d8c0db339d91f50d36f4fcf3b8a7c66524ba6a5",
+      "edges_sha256": "3f88115c13b4d37830ac7268dbee545cb7a41dcf481f1922ac7bc8e0525a93b4",
+      "significant_entries": 6424
+    },
+    {
+      "file": "graph_0232.npz",
+      "slot": 232,
+      "start": 66816,
+      "end": 68832,
+      "available": 68832,
+      "sha256": "68a18cfd46053bfe5472db2e0446b6e52c23b8260c078332f1563e0149655b28",
+      "edges_sha256": "a83ef30b3a11f59a4f783fa8668e6da54da59e898f87f83431bc6d199380e214",
+      "significant_entries": 6386
+    },
+    {
+      "file": "graph_0233.npz",
+      "slot": 233,
+      "start": 67104,
+      "end": 69120,
+      "available": 69120,
+      "sha256": "744c9bc3a49e4f812033211ee4cb892dd81c9752a2360d1cca90fb559c252fe2",
+      "edges_sha256": "01e19740a8a1fbd7f400d9600bc71cda9b8f4fc21d1edc050fb10704e64e77a8",
+      "significant_entries": 6067
+    },
+    {
+      "file": "graph_0234.npz",
+      "slot": 234,
+      "start": 67392,
+      "end": 69408,
+      "available": 69408,
+      "sha256": "84c88251a146a7589d050979855a9e04b9dde557bd1830c9c6025c23359f7f30",
+      "edges_sha256": "e8664cdc8b78209dd2a291d02d9b63eb5778bfbd109952f2ddce5f8971dbcdf2",
+      "significant_entries": 6399
+    },
+    {
+      "file": "graph_0235.npz",
+      "slot": 235,
+      "start": 67680,
+      "end": 69696,
+      "available": 69696,
+      "sha256": "4bfa0105f4e154cf8660821aecda33148045d79c4f89f2a7ba82737b33bc3f2a",
+      "edges_sha256": "f42eca62c00122528794491db38742463ab11d418d0f87b8e02d7bea902a4c0f",
+      "significant_entries": 6581
+    },
+    {
+      "file": "graph_0236.npz",
+      "slot": 236,
+      "start": 67968,
+      "end": 69984,
+      "available": 69984,
+      "sha256": "677101dcd74556961e3573fa34bf6711158e579177d42e1a3a72cecbb7809838",
+      "edges_sha256": "84b00c3e0ad2f1801633842a2ac60ce9138b1643393ade7195bc8d90c7dd519d",
+      "significant_entries": 6272
+    },
+    {
+      "file": "graph_0237.npz",
+      "slot": 237,
+      "start": 68256,
+      "end": 70272,
+      "available": 70272,
+      "sha256": "b65aa36655ad826e56dd617ea413d91f85468e46dd8fd52bfe9f2e5f485ea552",
+      "edges_sha256": "7361d6a13fc934c35ce2fc37d445814cb83256aa0083b3da2f3559f4116aa126",
+      "significant_entries": 5809
+    },
+    {
+      "file": "graph_0238.npz",
+      "slot": 238,
+      "start": 68544,
+      "end": 70560,
+      "available": 70560,
+      "sha256": "ad2d859b6fe8d397a5f21673665cebcd44e9da3be52d684e817b3ee250b8c65a",
+      "edges_sha256": "0b8a23f1fc6485ba4440e1b07001f2f65b558cfd859338e7675a3d248fbf7ab1",
+      "significant_entries": 5578
+    },
+    {
+      "file": "graph_0239.npz",
+      "slot": 239,
+      "start": 68832,
+      "end": 70848,
+      "available": 70848,
+      "sha256": "e4c2a90005a9987c164eb27c1007c009028bccb0b45f3622d25e4cb799fa4d0f",
+      "edges_sha256": "05ff6747e7c9cb771965f8d213b198579c438021de08ef62e710af7fbd78ffb1",
+      "significant_entries": 5969
+    },
+    {
+      "file": "graph_0240.npz",
+      "slot": 240,
+      "start": 69120,
+      "end": 71136,
+      "available": 71136,
+      "sha256": "1cc7dc87605def3e93d641dcd4189ba7acccc94782b9a2472c5e9fd03dcf27dd",
+      "edges_sha256": "f05139f68aabd9464fee69f2f0cda6c5e701f91413e55b4118b7a612f657142a",
+      "significant_entries": 4367
+    },
+    {
+      "file": "graph_0241.npz",
+      "slot": 241,
+      "start": 69408,
+      "end": 71424,
+      "available": 71424,
+      "sha256": "160c7aa0d8ccc8352675c4fc6aa8c356e7bfc9d4c4442391d6dbcd78489bb01a",
+      "edges_sha256": "e8f2a86dc4bc99132bd368e230ced89a82783d3701735e222b2a4908e4f3c3e2",
+      "significant_entries": 4978
+    },
+    {
+      "file": "graph_0242.npz",
+      "slot": 242,
+      "start": 69696,
+      "end": 71712,
+      "available": 71712,
+      "sha256": "676f8d8a00ac493f226b346d2b971a1ba5a8081e753b2601b9fa2cc1f417169f",
+      "edges_sha256": "abfcccd7ce3bbfdc08e80274602542a73b8875d5d127ae2889e4af642b1f000f",
+      "significant_entries": 4817
+    },
+    {
+      "file": "graph_0243.npz",
+      "slot": 243,
+      "start": 69984,
+      "end": 72000,
+      "available": 72000,
+      "sha256": "e9e082ad6ba1c32fd9cab788dd32c06ce7285537a2706a4153bc5f73c14a9181",
+      "edges_sha256": "6c7e63ceffde70f8b88b10a7200246e7cb4863f69cde6cc71fff8bc673e13693",
+      "significant_entries": 5377
+    },
+    {
+      "file": "graph_0244.npz",
+      "slot": 244,
+      "start": 70272,
+      "end": 72288,
+      "available": 72288,
+      "sha256": "f6e5d1728d4449815a6f7dfb2e7abda4f99f5f8485560036eb274870f744fb1d",
+      "edges_sha256": "2d2f21031f6c63a0e30b0ee03a55d8a0dfaba8d8b5d43ebc71e2c4e6c7deed71",
+      "significant_entries": 5880
+    },
+    {
+      "file": "graph_0245.npz",
+      "slot": 245,
+      "start": 70560,
+      "end": 72576,
+      "available": 72576,
+      "sha256": "72bc29abaf6624549286d701b71fc4c70e40aa35a0bb667e456ba058bc76c61b",
+      "edges_sha256": "e32cb2686f04e12d64d382dcc0401f16854ed6430b3d7d7cfa7b3cb946335232",
+      "significant_entries": 6258
+    },
+    {
+      "file": "graph_0246.npz",
+      "slot": 246,
+      "start": 70848,
+      "end": 72864,
+      "available": 72864,
+      "sha256": "97642bb65ae95aa90c38e32e255f9b2b3c7a08b673c33282d23f18fee1e89092",
+      "edges_sha256": "723d2bf3709769a43bc36e8421bbbc7f6447508947f4d2d9c6e18a7d4315c286",
+      "significant_entries": 6061
+    },
+    {
+      "file": "graph_0247.npz",
+      "slot": 247,
+      "start": 71136,
+      "end": 73152,
+      "available": 73152,
+      "sha256": "f0716d87c9cc17a3647996d80eb874f38bcb3233c3949054549e9d4329ea8be3",
+      "edges_sha256": "bc906c237c661dc8010b0fb6c3b57ac0b92859d37d6e0825025dbcbe854c2bb9",
+      "significant_entries": 6636
+    },
+    {
+      "file": "graph_0248.npz",
+      "slot": 248,
+      "start": 71424,
+      "end": 73440,
+      "available": 73440,
+      "sha256": "e76fea03025e981fc952cd0240dfaa7f46c75a2c0fe308c9cd11de294841adea",
+      "edges_sha256": "c5fc74ebcc18988a8d84b8f90a24c8f566b9d26ea3e68fe2c60cc25fc69b9194",
+      "significant_entries": 6322
+    },
+    {
+      "file": "graph_0249.npz",
+      "slot": 249,
+      "start": 71712,
+      "end": 73728,
+      "available": 73728,
+      "sha256": "044a0eca8733819bbb60d7455093ddaf4bb29d55d544100d47972a7d6be31264",
+      "edges_sha256": "09d138df57f71a85653e6d888127cf89ca102b2b8cdbd4534887135962ee8924",
+      "significant_entries": 6633
+    },
+    {
+      "file": "graph_0250.npz",
+      "slot": 250,
+      "start": 72000,
+      "end": 74016,
+      "available": 74016,
+      "sha256": "ccf0fa6f4580358dc969ad75da8093aa05ab41adc7ca0761301cdab61259c724",
+      "edges_sha256": "3836f55b6414ab86d5e5bff08b828a50ac371bba16de5e978a0662825a99edf1",
+      "significant_entries": 6181
+    },
+    {
+      "file": "graph_0251.npz",
+      "slot": 251,
+      "start": 72288,
+      "end": 74304,
+      "available": 74304,
+      "sha256": "a57f6e1effde2e130e348910a9ee61d7b39929657ff92345e4a189651ca69eb5",
+      "edges_sha256": "5bd3a3954a0191d98a6490e3cccf0ce755b4514656cbbbe4e1bcb5452fe3a6b9",
+      "significant_entries": 5985
+    },
+    {
+      "file": "graph_0252.npz",
+      "slot": 252,
+      "start": 72576,
+      "end": 74592,
+      "available": 74592,
+      "sha256": "df81b8dd22b50cc95ddee4d0db0c63270cb549624a8bb2c6f00e124f5741ed14",
+      "edges_sha256": "e34b281d5ba400b2c24e7c573060d6158a349e9da9db335273531721e88bcf06",
+      "significant_entries": 5822
+    },
+    {
+      "file": "graph_0253.npz",
+      "slot": 253,
+      "start": 72864,
+      "end": 74880,
+      "available": 74880,
+      "sha256": "c7c161f20e971691b258b5ed025c0e6025ef331a768aad91c4e7f464d8ce0e00",
+      "edges_sha256": "ed668447e10e884729a8e7bc956a6eb1eb4a5f5bf004ee8bf09b917d0a6fad8e",
+      "significant_entries": 6555
+    },
+    {
+      "file": "graph_0254.npz",
+      "slot": 254,
+      "start": 73152,
+      "end": 75168,
+      "available": 75168,
+      "sha256": "a686c2b8d919e6b800aee82730cb4fab9ee8dadbf020b9cfb743489bda2daa7b",
+      "edges_sha256": "69bfd7a71e032638a0efb7e885e994d92d232b3e1b6d3c859d961cf70971a931",
+      "significant_entries": 6312
+    },
+    {
+      "file": "graph_0255.npz",
+      "slot": 255,
+      "start": 73440,
+      "end": 75456,
+      "available": 75456,
+      "sha256": "f8f8257b371624c6d30f0b0d83ebc35c48d9619ed754e01e43d63b723ca6587a",
+      "edges_sha256": "2b1889b41abc065aca3f3d5533249fe77c9e813a5cdd47aaf76c187d52627c35",
+      "significant_entries": 6601
+    },
+    {
+      "file": "graph_0256.npz",
+      "slot": 256,
+      "start": 73728,
+      "end": 75744,
+      "available": 75744,
+      "sha256": "eaba0111a9343f37e1be62dfe59e98d9556372aa9d8996ee8bef7f892ac6b49f",
+      "edges_sha256": "ad64dfc6e81c2386ffd4ae5ae857be27aa7559af88b95eea56cdd635c8327efb",
+      "significant_entries": 6456
+    },
+    {
+      "file": "graph_0257.npz",
+      "slot": 257,
+      "start": 74016,
+      "end": 76032,
+      "available": 76032,
+      "sha256": "d8982836ef927f0a9675800447e187fae710d9f7bef8cdb74bf240a2ec96a8a3",
+      "edges_sha256": "3e67e72e9bb94b12e648e4e3187569e7ad4c8466b47c32329276ae179282529f",
+      "significant_entries": 6585
+    },
+    {
+      "file": "graph_0258.npz",
+      "slot": 258,
+      "start": 74304,
+      "end": 76320,
+      "available": 76320,
+      "sha256": "d6962e80728a045fba08c95ffc59a63d3b4a981d1857bdb7a8ec0551142ada79",
+      "edges_sha256": "5890e473e338d6a8bbd5ce3eabe4edc206b406688e622bb08502bb536c2568cd",
+      "significant_entries": 7700
+    },
+    {
+      "file": "graph_0259.npz",
+      "slot": 259,
+      "start": 74592,
+      "end": 76608,
+      "available": 76608,
+      "sha256": "6761a2d8d14bfabc30ac4f1eec07cf1d9087e2c441b161708aa7ac9db810db07",
+      "edges_sha256": "60f55c28ba60e89b1a005b241184a1389c1334088fd23a5149e398d77d7729e4",
+      "significant_entries": 7245
+    },
+    {
+      "file": "graph_0260.npz",
+      "slot": 260,
+      "start": 74880,
+      "end": 76896,
+      "available": 76896,
+      "sha256": "f53c8e9d92e6d194e7463c0ca5d50a740a732ffc17fe48393aaf1347cb532c5b",
+      "edges_sha256": "58792f044d162885f8f203091c6dd9c645d977b7ebe86ea26f77a9489e12871c",
+      "significant_entries": 7024
+    },
+    {
+      "file": "graph_0261.npz",
+      "slot": 261,
+      "start": 75168,
+      "end": 77184,
+      "available": 77184,
+      "sha256": "006479dfa0aeb4395dcffbfa126f4b450b5c890169b425b665fb53143d3e265d",
+      "edges_sha256": "6976e9558e7bce749630c55664a6129222183f9d9c27a07402fd83fdcace0ac9",
+      "significant_entries": 6668
+    },
+    {
+      "file": "graph_0262.npz",
+      "slot": 262,
+      "start": 75456,
+      "end": 77472,
+      "available": 77472,
+      "sha256": "7633561f53a370dd4abcd713c81ea31fa6f733cdf0ba282033d90d8faf61895a",
+      "edges_sha256": "c047ff99828f9c1e7d6fc784d8c86f6c109645749c467c5ebb31af6911c744a8",
+      "significant_entries": 5969
+    },
+    {
+      "file": "graph_0263.npz",
+      "slot": 263,
+      "start": 75744,
+      "end": 77760,
+      "available": 77760,
+      "sha256": "934fd048dfc9f10c0211957b15ec23a258eeac260e2e1e1d2eb3777a70f6f861",
+      "edges_sha256": "368883b234fc6043519c0f30324fccde973ba4e9b0b6dfa037527095fd712e31",
+      "significant_entries": 6274
+    },
+    {
+      "file": "graph_0264.npz",
+      "slot": 264,
+      "start": 76032,
+      "end": 78048,
+      "available": 78048,
+      "sha256": "530f4f3d8e902cb3b18282835b8fb8569fc41672aaef05365d96dd3d8b2e709b",
+      "edges_sha256": "a531bc7a892af6a863156ecb8ae3e869c49051e0e0e7d99ee376611603c53f21",
+      "significant_entries": 6041
+    },
+    {
+      "file": "graph_0265.npz",
+      "slot": 265,
+      "start": 76320,
+      "end": 78336,
+      "available": 78336,
+      "sha256": "82f7ddbf609c08b136d71c6f2e92b1060f175b8e3ee32cea902ecbf0ea803057",
+      "edges_sha256": "b77224b189ba35795a052d5c6ca516c1ee6925b483e917a4f5c2a19da26b5bae",
+      "significant_entries": 6382
+    },
+    {
+      "file": "graph_0266.npz",
+      "slot": 266,
+      "start": 76608,
+      "end": 78624,
+      "available": 78624,
+      "sha256": "ee68651a466a4f0145cd861474979c2e54b645aee41628fd9be8d488db119ca7",
+      "edges_sha256": "2b7d816be12285039c51f1f6ae2d0bac89cbfca8d13d6cd7e4a2cbc9df292039",
+      "significant_entries": 5810
+    },
+    {
+      "file": "graph_0267.npz",
+      "slot": 267,
+      "start": 76896,
+      "end": 78912,
+      "available": 78912,
+      "sha256": "18a7fc83ad649515efa3a483365b0cb53788b2d93a871f8aa04e703af1d28e6a",
+      "edges_sha256": "3e88a57c65b87e7c239bd53039c2df8c99ce1345fc95a6a3381dcacb0e3828cd",
+      "significant_entries": 6352
+    },
+    {
+      "file": "graph_0268.npz",
+      "slot": 268,
+      "start": 77184,
+      "end": 79200,
+      "available": 79200,
+      "sha256": "b41faa6d223b4fb88c6fa7a1033d1ef811b21ff5b6cea65dc0f0cc1f0b11bdb9",
+      "edges_sha256": "6b9f357b13d59e7e171d5b6193e66c718013a63651d0cbba8b8f30fa0fa1e774",
+      "significant_entries": 6532
+    },
+    {
+      "file": "graph_0269.npz",
+      "slot": 269,
+      "start": 77472,
+      "end": 79488,
+      "available": 79488,
+      "sha256": "69ad7b7c129302e9bd7672559b0dcf3865fcb8deb457fb3478133c561951b7c5",
+      "edges_sha256": "31e36ba4bf1b5e76e5b7e64c602d8774991e283c1b025dbe05ae3b3ef9b7d0c8",
+      "significant_entries": 6214
+    },
+    {
+      "file": "graph_0270.npz",
+      "slot": 270,
+      "start": 77760,
+      "end": 79776,
+      "available": 79776,
+      "sha256": "810270cdc213b398b39461c9e66a986a481d7d7f7b1f02e6382a949594a3b6a5",
+      "edges_sha256": "08c8a25aa9e4326fa3f0a734169ed55a8f5f83324d70c9d9231e149e117a86e3",
+      "significant_entries": 6748
+    },
+    {
+      "file": "graph_0271.npz",
+      "slot": 271,
+      "start": 78048,
+      "end": 80064,
+      "available": 80064,
+      "sha256": "3adb751583d6eb729c3b0451c6742c0a59555296493d8a0dccc7fab13ff0bdef",
+      "edges_sha256": "3555a5be156bf58af539023104476638a0230b5eaccc487d87223c1e57719d7e",
+      "significant_entries": 6336
+    },
+    {
+      "file": "graph_0272.npz",
+      "slot": 272,
+      "start": 78336,
+      "end": 80352,
+      "available": 80352,
+      "sha256": "ef910d7562701e63acf05f65fb158d6b80832c8c07e6d17fa974c80ad720187a",
+      "edges_sha256": "1368ec3d75a1cc6d7c8689c0d827dc94c4bffe68e5861218875d2b4effdcdbba",
+      "significant_entries": 5847
+    },
+    {
+      "file": "graph_0273.npz",
+      "slot": 273,
+      "start": 78624,
+      "end": 80640,
+      "available": 80640,
+      "sha256": "de0fcdce35ae35909b7dbdf2f82582342e1ec8f7308bf673dc2c7a5f15bdc525",
+      "edges_sha256": "56e348617279479c1b3f48d44a2cc64c6310ad412aee94b51b8ca18fc98e254a",
+      "significant_entries": 5752
+    },
+    {
+      "file": "graph_0274.npz",
+      "slot": 274,
+      "start": 78912,
+      "end": 80928,
+      "available": 80928,
+      "sha256": "ab47ce520f737bf16921071e7b58907eb270a6e5565b75bd972ab39c3a701043",
+      "edges_sha256": "3662368387c1f477b12fdaed18f311c82860c5e7dfceedf34593776431f1be3b",
+      "significant_entries": 5781
+    },
+    {
+      "file": "graph_0275.npz",
+      "slot": 275,
+      "start": 79200,
+      "end": 81216,
+      "available": 81216,
+      "sha256": "35f220bf8ce22a5c0cbc499185740ea2216b775644c67a3b1cb859cc9f28ce2e",
+      "edges_sha256": "932aa85c0b69584222c31d691a16179f5f7ccc5f3277bb00fc6ccd79815fac91",
+      "significant_entries": 6054
+    },
+    {
+      "file": "graph_0276.npz",
+      "slot": 276,
+      "start": 79488,
+      "end": 81504,
+      "available": 81504,
+      "sha256": "1a1b7325e90fabf67fd0a13d2aeff4dea17f92dd5ed8a51c1d092bb240b4354e",
+      "edges_sha256": "21173c72dae66143a2e174c616164aec4320f76ecb6f69636bc2373c0faf9733",
+      "significant_entries": 5578
+    },
+    {
+      "file": "graph_0277.npz",
+      "slot": 277,
+      "start": 79776,
+      "end": 81792,
+      "available": 81792,
+      "sha256": "59a656007bdfdd363a13359d128f955bf3b4ade28a6270550f607f11f9658fb8",
+      "edges_sha256": "6058d50e51c7e1ccb39d8a2fbf7fac362b38ecedf94ef395a77c60e0d23917f5",
+      "significant_entries": 4845
+    },
+    {
+      "file": "graph_0278.npz",
+      "slot": 278,
+      "start": 80064,
+      "end": 82080,
+      "available": 82080,
+      "sha256": "a8d076b2192e1a76a9d3c885bc2035f6ceea93f35b14122fd789a0553f39a46b",
+      "edges_sha256": "4732ca26d99148a8df865a1d8ac1d022f522a5fd56bc3fff467f362b1014d755",
+      "significant_entries": 5402
+    },
+    {
+      "file": "graph_0279.npz",
+      "slot": 279,
+      "start": 80352,
+      "end": 82368,
+      "available": 82368,
+      "sha256": "e29c53c78e265feb05d2f001f279ebe3d612ee3a4c0a086af0fa1b11e478a1a0",
+      "edges_sha256": "7358cf12dbfcd40f30f3fce2fbe6b86703f7c2638cfd33133c908cb2fdd21464",
+      "significant_entries": 5245
+    },
+    {
+      "file": "graph_0280.npz",
+      "slot": 280,
+      "start": 80640,
+      "end": 82656,
+      "available": 82656,
+      "sha256": "352c682b0db29fcfb40c31c7cf9f83e1b615fadb8d19a033bb714170180d892f",
+      "edges_sha256": "148aab6a48efd94e78ec04d4974a5efd335e9040705351f46e945df19c2cff75",
+      "significant_entries": 5197
+    },
+    {
+      "file": "graph_0281.npz",
+      "slot": 281,
+      "start": 80928,
+      "end": 82944,
+      "available": 82944,
+      "sha256": "ef47844fc370efdc60c7ecc30673067342f7e9965d31668cf9fe0907a5264ed1",
+      "edges_sha256": "68735facc938c1bfef3ff9c42b202732f4f1e2600957e5d67a8a4619a5f0b65e",
+      "significant_entries": 5461
+    },
+    {
+      "file": "graph_0282.npz",
+      "slot": 282,
+      "start": 81216,
+      "end": 83232,
+      "available": 83232,
+      "sha256": "9dc9e5a877cc34592cb65758961a40bb2c744d98c7a75e7c366c6d7117e66dba",
+      "edges_sha256": "e917122d470e00b7fb0b9e33d3459d64a943775ea5df6257d4695c714028f789",
+      "significant_entries": 6068
+    },
+    {
+      "file": "graph_0283.npz",
+      "slot": 283,
+      "start": 81504,
+      "end": 83520,
+      "available": 83520,
+      "sha256": "52e1d3d5ba2388128a5516ff8b521d145b0ca1f7535da0490d7052ab18e0c4a8",
+      "edges_sha256": "85970209cb372d7323ff073ab8154447b974b255ee9dcf75ffeac116165ed8ff",
+      "significant_entries": 5605
+    },
+    {
+      "file": "graph_0284.npz",
+      "slot": 284,
+      "start": 81792,
+      "end": 83808,
+      "available": 83808,
+      "sha256": "65fbd1be807836cc96b5703ac8a3df14ec2cedd5e76a341f7cb526cb048b3381",
+      "edges_sha256": "ab97ca8f94cf63105ba183d01b75b9747e88b258530f8ece182755fa3e004ff2",
+      "significant_entries": 5659
+    },
+    {
+      "file": "graph_0285.npz",
+      "slot": 285,
+      "start": 82080,
+      "end": 84096,
+      "available": 84096,
+      "sha256": "c1be080c13e920571438deec1175dba01dffd8767a99ab84a8bc5fc571856d04",
+      "edges_sha256": "12cb2883337bd967cd6c98a228eeb976b3a0c77152f73c6b6e5aacc256170864",
+      "significant_entries": 7415
+    },
+    {
+      "file": "graph_0286.npz",
+      "slot": 286,
+      "start": 82368,
+      "end": 84384,
+      "available": 84384,
+      "sha256": "139ffe0d2c943c77f75c7dc8a14410cc5d1b20ab27e29d0909491fe60abc59bf",
+      "edges_sha256": "4b3176946d30d97a432567a5a1b56f8d2fc416f18c0fadaf9128830c8a947c72",
+      "significant_entries": 6828
+    },
+    {
+      "file": "graph_0287.npz",
+      "slot": 287,
+      "start": 82656,
+      "end": 84672,
+      "available": 84672,
+      "sha256": "e6158e56417b5b6d5730a6047f82c86a9489b8fa1f4c74bfa6416662a1458066",
+      "edges_sha256": "f92cfd856971b09d5f445a69b6f4cda595185d3efd82b545a03b51ed330465b0",
+      "significant_entries": 6730
+    },
+    {
+      "file": "graph_0288.npz",
+      "slot": 288,
+      "start": 82944,
+      "end": 84960,
+      "available": 84960,
+      "sha256": "6ad827be92f5c892459320e5b2846099daaafd9e184083e2d7785b5e25fb7b69",
+      "edges_sha256": "97f54b85eca32c9196f752118758847568c86f0f515270bfeace23d9ce8a8891",
+      "significant_entries": 5310
+    },
+    {
+      "file": "graph_0289.npz",
+      "slot": 289,
+      "start": 83232,
+      "end": 85248,
+      "available": 85248,
+      "sha256": "d206a08e930b4228bd8c0d6ddce68150cea4d5e29e393265f6dd3898249d40d2",
+      "edges_sha256": "b6d13a9f7b1bc9ce408cd89c22c85e76667f6ca351c8e74d6193697c855a948f",
+      "significant_entries": 5590
+    },
+    {
+      "file": "graph_0290.npz",
+      "slot": 290,
+      "start": 83520,
+      "end": 85536,
+      "available": 85536,
+      "sha256": "215a900bb91b2a53c34813dd5dbfd31504da668dda881b4c29db37e7480089c1",
+      "edges_sha256": "0620551dc515e3f824af5b1abd24ec91c8a2ac57e928cc798be67ce0175a0470",
+      "significant_entries": 5665
+    },
+    {
+      "file": "graph_0291.npz",
+      "slot": 291,
+      "start": 83808,
+      "end": 85824,
+      "available": 85824,
+      "sha256": "dd6396e6f7474265cd5d8e41bab24a4384fa8fce3b9804d835285f9fc9d06e36",
+      "edges_sha256": "c62501a928d106fd4ca9141e86dfeb1ae3691b3307a5af111908296df2177818",
+      "significant_entries": 5738
+    },
+    {
+      "file": "graph_0292.npz",
+      "slot": 292,
+      "start": 84096,
+      "end": 86112,
+      "available": 86112,
+      "sha256": "fa654e3ac6a32fc16150c8dc4158c2278e296535e953373febb6fbf41e47306f",
+      "edges_sha256": "60aa41c09c546d3b0cfe920b30d55b4b64fd84429bde65d2a10bf4297de4459d",
+      "significant_entries": 5491
+    },
+    {
+      "file": "graph_0293.npz",
+      "slot": 293,
+      "start": 84384,
+      "end": 86400,
+      "available": 86400,
+      "sha256": "5ba60bd5d46a0a67e00dbb3a2d7c4c03599d6592b81e2220dee87b2855df5ff3",
+      "edges_sha256": "956b52f404490b73bfa83bb249d586bb10ee58a962ca22607f7a6982ff23ad3c",
+      "significant_entries": 4995
+    },
+    {
+      "file": "graph_0294.npz",
+      "slot": 294,
+      "start": 84672,
+      "end": 86688,
+      "available": 86688,
+      "sha256": "f83a47eddaee39ee9d841985b1fca5c4d2b45c86a947f435441f6592f7c45bbf",
+      "edges_sha256": "e2bd7f27fb585007702e7e7a7bcc92f66868f985d0ddf95db21ff77499f0a440",
+      "significant_entries": 4975
+    },
+    {
+      "file": "graph_0295.npz",
+      "slot": 295,
+      "start": 84960,
+      "end": 86976,
+      "available": 86976,
+      "sha256": "2171fa32e8a138e3ef458e67499ea5e2f8035db145336decf08cdbe9b3e9fbee",
+      "edges_sha256": "2dad2354ed41549a2949af65d128c3ecd6a5878a442ddb4286f6e518bca5dd1f",
+      "significant_entries": 5399
+    },
+    {
+      "file": "graph_0296.npz",
+      "slot": 296,
+      "start": 85248,
+      "end": 87264,
+      "available": 87264,
+      "sha256": "8164cf67bf74ebf372040f3ccd9a5d531633d12bf92fcd39b1bc255bcccf78d3",
+      "edges_sha256": "23d0f3fbfc3fa62ba6aa23bbf19469fdd7c70bcc3fbe4aec7cdf13b07a0aca61",
+      "significant_entries": 5509
+    },
+    {
+      "file": "graph_0297.npz",
+      "slot": 297,
+      "start": 85536,
+      "end": 87552,
+      "available": 87552,
+      "sha256": "30e6340e6353e6324ea58be9ccbd7b7dcca83e9ab2d769965a6ac4a3cc968a9f",
+      "edges_sha256": "bad5ee81d229b7226ab82d93a04ec32ea2f9eb81611d46caf9fc8b1e2ab4c38d",
+      "significant_entries": 5523
+    },
+    {
+      "file": "graph_0298.npz",
+      "slot": 298,
+      "start": 85824,
+      "end": 87840,
+      "available": 87840,
+      "sha256": "0f8c73f22cf5eb4eb8ab363ee08c2fd75f0f5bcbaaa9229a3e02cb994d714a2d",
+      "edges_sha256": "c1bbe50e7235039ca99bf85622e00cdba47441767d1d9d923f4332e7c4c06aab",
+      "significant_entries": 5656
+    },
+    {
+      "file": "graph_0299.npz",
+      "slot": 299,
+      "start": 86112,
+      "end": 88128,
+      "available": 88128,
+      "sha256": "8663d883a06c0ffef18987c126b3b71f775f52132cded14dd5a95b288fc17b3d",
+      "edges_sha256": "d5370bd912c74cd75a872bd6153923bb9dbce7dbed39d769195c0d6a8277b9e1",
+      "significant_entries": 5518
+    },
+    {
+      "file": "graph_0300.npz",
+      "slot": 300,
+      "start": 86400,
+      "end": 88416,
+      "available": 88416,
+      "sha256": "ba45f050a967e9781a3fc1182ddf5923e5b3c90f220617591e61a216719be896",
+      "edges_sha256": "44e307f4213eff34c113a7686d4b44ac4ea3b73a254fc7ae5d3c2317611cad01",
+      "significant_entries": 5737
+    },
+    {
+      "file": "graph_0301.npz",
+      "slot": 301,
+      "start": 86688,
+      "end": 88704,
+      "available": 88704,
+      "sha256": "f599c893816a8dfd5d6bfa8fa2d9f23a0b27c31e19c180f82493c07c8b2bb723",
+      "edges_sha256": "d6800a83a720153a57bec07403b23ae136358c234494d24bd731f861862d6a7f",
+      "significant_entries": 5302
+    },
+    {
+      "file": "graph_0302.npz",
+      "slot": 302,
+      "start": 86976,
+      "end": 88992,
+      "available": 88992,
+      "sha256": "5e60707ffbe5ccc225b3eb2f02e56647d58d61f49921386b0e562f8f6de4a8e4",
+      "edges_sha256": "f87ffd664876b2dd83f08d889b7e8d008346a1ee6251f921a2b14609a376872a",
+      "significant_entries": 5184
+    },
+    {
+      "file": "graph_0303.npz",
+      "slot": 303,
+      "start": 87264,
+      "end": 89280,
+      "available": 89280,
+      "sha256": "cf68ba77462f1db9d7d2f80db28482138e7e5984733d99fad3ee2a215a24a331",
+      "edges_sha256": "1352a8d667fa6859750262ab0f78076453ff92f8ef2d88abd9574f1472509ab2",
+      "significant_entries": 5074
+    },
+    {
+      "file": "graph_0304.npz",
+      "slot": 304,
+      "start": 87552,
+      "end": 89568,
+      "available": 89568,
+      "sha256": "a0f3437592e7d364595653c4d1803f90e674bd12f3209c17519975776a75898e",
+      "edges_sha256": "3e22d6891df8df0f75569ad550d6553e167937fcbec80c7c675bae36ee69a1f7",
+      "significant_entries": 5422
+    },
+    {
+      "file": "graph_0305.npz",
+      "slot": 305,
+      "start": 87840,
+      "end": 89856,
+      "available": 89856,
+      "sha256": "87cc0c43dd08b03abe8079be8ada4fa2cf110b279d06fc249d2b74a2699d866d",
+      "edges_sha256": "6cd32fb328276ef949a1d2ae7ab6a98b5ed89b5b245bafd3b6e28d6264465683",
+      "significant_entries": 5361
+    },
+    {
+      "file": "graph_0306.npz",
+      "slot": 306,
+      "start": 88128,
+      "end": 90144,
+      "available": 90144,
+      "sha256": "b71cd96cd08a25d6a49980ef1efefd5746ecd3b15b0209e36ffe22fd950fe588",
+      "edges_sha256": "9f999e5ac60678183bb090fad83f6e96d6d68eb598b6ad5147b1721a6ab5e5b4",
+      "significant_entries": 5483
+    },
+    {
+      "file": "graph_0307.npz",
+      "slot": 307,
+      "start": 88416,
+      "end": 90432,
+      "available": 90432,
+      "sha256": "9625cd7d9e4a4d7870ef4a38592aa4b2fee20011600d8ce56e14040c5c8b89a1",
+      "edges_sha256": "9c60495c2f3752ac783b6a730a904169a8be0ce8c4099ca6bbc0af470505ff60",
+      "significant_entries": 5107
+    },
+    {
+      "file": "graph_0308.npz",
+      "slot": 308,
+      "start": 88704,
+      "end": 90720,
+      "available": 90720,
+      "sha256": "65190c14121c6ab4f71cf89488ab609ab613bee75d287dc8351a10a6a4fb3a31",
+      "edges_sha256": "00d97360e90c204944ba6ae1b7eaf0e3328e1bd6ed0d3148f49b5f3064c8c02a",
+      "significant_entries": 5531
+    },
+    {
+      "file": "graph_0309.npz",
+      "slot": 309,
+      "start": 88992,
+      "end": 91008,
+      "available": 91008,
+      "sha256": "579ba18aac8eb01b01dceccdf6b36073940fe216c470890c4c18c242f199c297",
+      "edges_sha256": "486c7a905993fddf54a48df329be419d0665e302ebbaa69cf50bf436abf7b72a",
+      "significant_entries": 6007
+    },
+    {
+      "file": "graph_0310.npz",
+      "slot": 310,
+      "start": 89280,
+      "end": 91296,
+      "available": 91296,
+      "sha256": "2969e35ec074698eabfe2e635c762130893e2be33aca76e3f53ebefd351e9fa9",
+      "edges_sha256": "8d0280b3fbaf045e4ea7bc545e281615c0696bc8d6b6bf48517976242d1d588e",
+      "significant_entries": 6409
+    },
+    {
+      "file": "graph_0311.npz",
+      "slot": 311,
+      "start": 89568,
+      "end": 91584,
+      "available": 91584,
+      "sha256": "b40d627ea33ad59f1c9ad2139421dc588651f84563779a2bccc9eea3ec202824",
+      "edges_sha256": "3a73c7601615a7fed757538f89a4c814941435940e11e997ed9eb389c4d22ff6",
+      "significant_entries": 5369
+    },
+    {
+      "file": "graph_0312.npz",
+      "slot": 312,
+      "start": 89856,
+      "end": 91872,
+      "available": 91872,
+      "sha256": "251def3bfa8e9ecacb1d4513f78b4f003dbad2e138358229a919ca1f965ed85a",
+      "edges_sha256": "27b3127a29f19def322f7c08dff89a5b1890ba3a368a643ea4bed636b55ed53d",
+      "significant_entries": 6349
+    },
+    {
+      "file": "graph_0313.npz",
+      "slot": 313,
+      "start": 90144,
+      "end": 92160,
+      "available": 92160,
+      "sha256": "c3118219531458bacaed771ed61c54456b39387325d5c3dc059dc5d45223915c",
+      "edges_sha256": "45d27f3161e2ef7b934c396b8aa5e80145f5dacbb088a3dddf045afc13d9f243",
+      "significant_entries": 6089
+    },
+    {
+      "file": "graph_0314.npz",
+      "slot": 314,
+      "start": 90432,
+      "end": 92448,
+      "available": 92448,
+      "sha256": "fb0a1cb7089463caeab83cdd0a2065edde6bc9595add19336e8044ecacc84846",
+      "edges_sha256": "3bcded64a6791d6d5bf2c1d752c96aea91e4d3f49cba1c176acbc0585bd25af8",
+      "significant_entries": 6068
+    },
+    {
+      "file": "graph_0315.npz",
+      "slot": 315,
+      "start": 90720,
+      "end": 92736,
+      "available": 92736,
+      "sha256": "f2c1330306a19377989826a2fcd1be5499c8149c6166a6b61b32fae56053c33b",
+      "edges_sha256": "f51983d04f893233972735efac728fdf42f2f7c1b4509040be3a0927ee20ac8d",
+      "significant_entries": 5436
+    },
+    {
+      "file": "graph_0316.npz",
+      "slot": 316,
+      "start": 91008,
+      "end": 93024,
+      "available": 93024,
+      "sha256": "3ca963cec453e5261ea3d5a657dac8864f6154d38383d88364c3c22dbe5d4b16",
+      "edges_sha256": "0cd8f4f844a3bd372c6edcab0004c636d6093ca078744de2b162088eec0db291",
+      "significant_entries": 5492
+    },
+    {
+      "file": "graph_0317.npz",
+      "slot": 317,
+      "start": 91296,
+      "end": 93312,
+      "available": 93312,
+      "sha256": "c77aa54f7668406b4a1f342ca113823e8b408bc9a1d62fc53dc733574aa227a9",
+      "edges_sha256": "b7c36e3e9e57c2a62244fae54c4e02bb506d14dd0627e31763c8a6fc87debebf",
+      "significant_entries": 5617
+    },
+    {
+      "file": "graph_0318.npz",
+      "slot": 318,
+      "start": 91584,
+      "end": 93600,
+      "available": 93600,
+      "sha256": "79054ef5a2af1f083dd4d62e1e319a05c318682f8a93668e4a02c236a0e1e1e7",
+      "edges_sha256": "075598a127a7890c30657628ce17ad65e7d2fbf9afc3d1d13713fbbc328fdffd",
+      "significant_entries": 5640
+    },
+    {
+      "file": "graph_0319.npz",
+      "slot": 319,
+      "start": 91872,
+      "end": 93888,
+      "available": 93888,
+      "sha256": "91ec00b8fe8337c51ffc3ad5d07d4403bf0332c611f5d68e58b69a57db9f3b48",
+      "edges_sha256": "9db7efa438d6f18bea3b512051e28a5fefb5b30ee75e1dfaaf1d2d4e51fbd887",
+      "significant_entries": 5114
+    },
+    {
+      "file": "graph_0320.npz",
+      "slot": 320,
+      "start": 92160,
+      "end": 94176,
+      "available": 94176,
+      "sha256": "f22daa216471c5dbaab1d6572e9de4105d5c57d45e85e223383e321389b14ee6",
+      "edges_sha256": "9efb22874a2e4849b71d899ace44d8cf8824ab9796d1437d02e5daba9d47eb88",
+      "significant_entries": 5447
+    },
+    {
+      "file": "graph_0321.npz",
+      "slot": 321,
+      "start": 92448,
+      "end": 94464,
+      "available": 94464,
+      "sha256": "4428459ce3b7360a18167f3bb540f68fa72e25dc1ebd458fe508f92120a38c1d",
+      "edges_sha256": "bdc77146d09b20514d6cf14c82d741df584864c42037a4eec0535decefb54693",
+      "significant_entries": 4359
+    },
+    {
+      "file": "graph_0322.npz",
+      "slot": 322,
+      "start": 92736,
+      "end": 94752,
+      "available": 94752,
+      "sha256": "a6a56e59d56f5b39bae989877ba4423f6893a3ba0ea09fd69ca9dd656a9d3017",
+      "edges_sha256": "88990460186b57d72dcc9ddb7c3239fbe38187665b90840dcd6b47a7d436b012",
+      "significant_entries": 5222
+    },
+    {
+      "file": "graph_0323.npz",
+      "slot": 323,
+      "start": 93024,
+      "end": 95040,
+      "available": 95040,
+      "sha256": "a0a9568e6227dfc9293f4299c81239cf881634db1cacf132c18448122752513d",
+      "edges_sha256": "d278ae3eb2b3d384df811f26887e4689737d90d7241f34ffada7030004326f57",
+      "significant_entries": 4765
+    },
+    {
+      "file": "graph_0324.npz",
+      "slot": 324,
+      "start": 93312,
+      "end": 95328,
+      "available": 95328,
+      "sha256": "9e374444ddf2ecf5781fc969bb29d77446efbbdf6a932731e3a54c47e599fea8",
+      "edges_sha256": "af9b7c8ae53029ec5ab8a6f0d14c20a785d5c2467a6d3be09baf50c96b7feb38",
+      "significant_entries": 4625
+    },
+    {
+      "file": "graph_0325.npz",
+      "slot": 325,
+      "start": 93600,
+      "end": 95616,
+      "available": 95616,
+      "sha256": "e36d27b79515d6da3683fed9914c7d6921f8f6c6c4aeff1ad1a3b65a96503dae",
+      "edges_sha256": "aca27c65853cc6aaccd2cd7e10a56dd89924b0019a31df097edd69a102c38292",
+      "significant_entries": 4757
+    },
+    {
+      "file": "graph_0326.npz",
+      "slot": 326,
+      "start": 93888,
+      "end": 95904,
+      "available": 95904,
+      "sha256": "c119a10bcb1c26186d4ecbc36a50161a6f9593105ded0b5422c1baf9959b9399",
+      "edges_sha256": "4824b596c90a9fd2cd18754530f326542b235c28e24e315cbe975581897b3992",
+      "significant_entries": 5053
+    },
+    {
+      "file": "graph_0327.npz",
+      "slot": 327,
+      "start": 94176,
+      "end": 96192,
+      "available": 96192,
+      "sha256": "3f2b4ce87a8b60a2906358df887f0a275e0d96013a3c2faabba6bd6733db215e",
+      "edges_sha256": "714fd350ccbb1a1d01260c2a030520130fb12230bf4ed4c6c6c1227d6525ca20",
+      "significant_entries": 5234
+    },
+    {
+      "file": "graph_0328.npz",
+      "slot": 328,
+      "start": 94464,
+      "end": 96480,
+      "available": 96480,
+      "sha256": "e94a423a25bbccc14bcfcc255e322d607ee8db270a77dacc5b2d9537c3850e35",
+      "edges_sha256": "7ae00cce2786dda453f76dfa3ad8ba8adf5bfad33f72fbc872f762f09e7fb525",
+      "significant_entries": 5636
+    },
+    {
+      "file": "graph_0329.npz",
+      "slot": 329,
+      "start": 94752,
+      "end": 96768,
+      "available": 96768,
+      "sha256": "9668ea4213381a550783510b270fda0ade83476eebeb7392993c4facd754fb3a",
+      "edges_sha256": "044f741342c9857c74ba52269f3f5bd288cb07bb54094e97d106214026233675",
+      "significant_entries": 6015
+    },
+    {
+      "file": "graph_0330.npz",
+      "slot": 330,
+      "start": 95040,
+      "end": 97056,
+      "available": 97056,
+      "sha256": "1f8967390c4757cf955e6cf372c8ca3eb46288f18535281e029d72062c1daa4c",
+      "edges_sha256": "fec00ace89dcb46c02de0535d2fea61f58abcf4039a8634261bb598d6d92c8d1",
+      "significant_entries": 6720
+    },
+    {
+      "file": "graph_0331.npz",
+      "slot": 331,
+      "start": 95328,
+      "end": 97344,
+      "available": 97344,
+      "sha256": "75b43586a4f48376146255f1c59b0439599afbcc32ef8dff91dc48c35de945ba",
+      "edges_sha256": "85b5af2a0f896d902ff6e41e314d301087055d2dcb5288f24c82dee64c4f3996",
+      "significant_entries": 5873
+    },
+    {
+      "file": "graph_0332.npz",
+      "slot": 332,
+      "start": 95616,
+      "end": 97632,
+      "available": 97632,
+      "sha256": "199928975fd4e92a508021baec936b5ca46991f4cef81f329fe7296cd37f5c31",
+      "edges_sha256": "1bdd1dc83aefd838618b1257fbc1f21a9d51e9e5854ddb7ee24f7f9e4d1c9ce0",
+      "significant_entries": 6414
+    },
+    {
+      "file": "graph_0333.npz",
+      "slot": 333,
+      "start": 95904,
+      "end": 97920,
+      "available": 97920,
+      "sha256": "b1167d73453350210119af710c601c9f932e74a28bdf3fa83467f49e2a342569",
+      "edges_sha256": "966aef5fa77e55a765e51d1a002b838f0590c20e72a38f21fa67fede8e63f058",
+      "significant_entries": 5772
+    },
+    {
+      "file": "graph_0334.npz",
+      "slot": 334,
+      "start": 96192,
+      "end": 98208,
+      "available": 98208,
+      "sha256": "a1338c8a7168cb93501f702a1bc0d99805835833a2c31d767679adab87c63b7c",
+      "edges_sha256": "c7aa98f9321e1e6a78eabcac9ade97084606c72c0d10d6bd504b24032bfb928d",
+      "significant_entries": 6430
+    },
+    {
+      "file": "graph_0335.npz",
+      "slot": 335,
+      "start": 96480,
+      "end": 98496,
+      "available": 98496,
+      "sha256": "8f904c786735719ff210560035a5906640d947149d81892a49a1b4c516f01050",
+      "edges_sha256": "80a69e449dd7f8fc26cbd2a01c39ba7d4eef7b0e5e57d814421c46283ef20eda",
+      "significant_entries": 6216
+    },
+    {
+      "file": "graph_0336.npz",
+      "slot": 336,
+      "start": 96768,
+      "end": 98784,
+      "available": 98784,
+      "sha256": "68f9797f0a7ee5d0806f72f868902b23dc2ce01462aa337a270aab9e6ec20141",
+      "edges_sha256": "b4d6f976d58d13d391399f31ec4841d691c7406676a40ded48913e33f37f8bb3",
+      "significant_entries": 5687
+    },
+    {
+      "file": "graph_0337.npz",
+      "slot": 337,
+      "start": 97056,
+      "end": 99072,
+      "available": 99072,
+      "sha256": "193ccad890794a86eef3cca8161a4a89d61492dcd2eb5d2b7f5bc38791cc46b0",
+      "edges_sha256": "7c775add804a1c61f20872db2766af60b7429e84332e5804b9aff93aa061f0b5",
+      "significant_entries": 5873
+    },
+    {
+      "file": "graph_0345.npz",
+      "slot": 345,
+      "start": 99360,
+      "end": 101376,
+      "available": 101376,
+      "sha256": "56e0637ba81063187afefd9acd3a17ccaf4a9642563ce9d9ae96633a489d67ce",
+      "edges_sha256": "c7fba0b167e19052f82d26b1719361ca9df18f4e8bc26536084c6b8693766689",
+      "significant_entries": 6155
+    },
+    {
+      "file": "graph_0356.npz",
+      "slot": 356,
+      "start": 102528,
+      "end": 104544,
+      "available": 104544,
+      "sha256": "7d442e44fa1ee6d66d9a2a73bd18b54b48b1b257714fda5cfd31386143b1b1b9",
+      "edges_sha256": "aa994ae614de018bbb22abb9aa77d7d0bac4514ed9d06ddd4a159b9ce4d36990",
+      "significant_entries": 5002
+    },
+    {
+      "file": "graph_0357.npz",
+      "slot": 357,
+      "start": 102816,
+      "end": 104832,
+      "available": 104832,
+      "sha256": "47a2b42b677283122bbf76d6f9be262fc7195e3f57458c6d8b4403eba061178a",
+      "edges_sha256": "1482bb94708f5dc1e38df74d945b266d48ab68707733fee141ee9acc1e0e80d9",
+      "significant_entries": 5427
+    }
+  ]
+}
