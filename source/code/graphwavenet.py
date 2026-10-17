@@ -1,42 +1,40 @@
+"""Reference GraphWaveNet computations, extracted unchanged from the previous wrapper."""
 import torch
-import torch.nn as nn
-import torch.nn.functional as F
-from torch.autograd import Variable
-import sys
+from torch import nn
+from torch.nn import functional as F
 
-
-class nconv(nn.Module):
+class ReferenceNConv(nn.Module):
     def __init__(self):
-        super(nconv,self).__init__()
+        super(ReferenceNConv,self).__init__()
 
     def forward(self,x, A):
         x = torch.einsum('ncvl,vw->ncwl',(x,A))
         return x.contiguous()
 
-class linear(nn.Module):
+class ReferenceLinear(nn.Module):
     def __init__(self,c_in,c_out):
-        super(linear,self).__init__()
+        super(ReferenceLinear,self).__init__()
         self.mlp = torch.nn.Conv2d(c_in, c_out, kernel_size=(1, 1), padding=(0,0), stride=(1,1), bias=True)
 
     def forward(self,x):
         return self.mlp(x)
 
-class gcn(nn.Module):
+class ReferenceGCN(nn.Module):
     def __init__(self,c_in,c_out,dropout,support_len=3,order=2):
-        super(gcn,self).__init__()
-        self.nconv = nconv()
+        super(ReferenceGCN,self).__init__()
+        self.ReferenceNConv = ReferenceNConv()
         c_in = (order*support_len+1)*c_in
-        self.mlp = linear(c_in,c_out)
+        self.mlp = ReferenceLinear(c_in,c_out)
         self.dropout = dropout
         self.order = order
 
     def forward(self,x,support):
         out = [x]
         for a in support:
-            x1 = self.nconv(x,a)
+            x1 = self.ReferenceNConv(x,a)
             out.append(x1)
             for k in range(2, self.order + 1):
-                x2 = self.nconv(x1,a)
+                x2 = self.ReferenceNConv(x1,a)
                 out.append(x2)
                 x1 = x2
 
@@ -45,10 +43,9 @@ class gcn(nn.Module):
         h = F.dropout(h, self.dropout, training=self.training)
         return h
 
-
-class gwnet(nn.Module):
+class ReferenceGraphWaveNet(nn.Module):
     def __init__(self, device, num_nodes, dropout=0.3, supports=None, gcn_bool=True, addaptadj=True, aptinit=None, in_dim=2,out_dim=12,residual_channels=32,dilation_channels=32,skip_channels=256,end_channels=512,kernel_size=2,blocks=4,layers=2):
-        super(gwnet, self).__init__()
+        super(ReferenceGraphWaveNet, self).__init__()
         self.dropout = dropout
         self.blocks = blocks
         self.layers = layers
@@ -120,7 +117,7 @@ class gwnet(nn.Module):
                 receptive_field += additional_scope
                 additional_scope *= 2
                 if self.gcn_bool:
-                    self.gconv.append(gcn(dilation_channels,residual_channels,dropout,support_len=self.supports_len))
+                    self.gconv.append(ReferenceGCN(dilation_channels,residual_channels,dropout,support_len=self.supports_len))
 
 
 
@@ -204,8 +201,3 @@ class gwnet(nn.Module):
         x = F.relu(self.end_conv_1(x))
         x = self.end_conv_2(x)
         return x
-
-
-
-
-

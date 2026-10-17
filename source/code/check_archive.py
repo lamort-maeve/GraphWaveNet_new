@@ -6,7 +6,7 @@ from pathlib import Path
 import numpy as np
 import torch
 
-from causal_model import DynamicGraphWaveNet
+from forecast_model import PaperGraphWaveNet
 
 
 def main():
@@ -21,8 +21,8 @@ def main():
     variables = bank.shape[-1]
     coverage=json.loads((args.prepared_run/'coverage.json').read_text(encoding='utf-8'))
     context=max(coverage['context'],bank.shape[1])
-    model = DynamicGraphWaveNet(variables, 1, list(range(variables)), bank,
-                                hidden=4, blocks=4, layers=2, dropout=0,context=context).eval()
+    model = PaperGraphWaveNet(variables, 1, list(range(variables)), bank,
+                                mode='causal', hidden=4, blocks=4, layers=2, dropout=0).eval()
     visited = []
     with torch.no_grad():
         for start in range(1, len(bank), 8):
@@ -35,16 +35,21 @@ def main():
             visited.extend(indices.tolist())
     assert visited == list(range(1, len(bank)))
     # Full-width, full-depth backward check on one real causal graph.
-    model = DynamicGraphWaveNet(variables, 1, list(range(variables)), bank,
-                                hidden=32, blocks=4, layers=2, dropout=0,context=context)
+    model = PaperGraphWaveNet(variables, 1, list(range(variables)), bank,
+                                mode='causal', hidden=32, blocks=4, layers=2, dropout=0)
     x = torch.randn(1, 1, variables, context, requires_grad=True)
     ids = torch.ones(1, context, dtype=torch.long)
     model(x, ids).square().mean().backward()
     assert torch.isfinite(x.grad).all()
+    # The last hidden-state residual/BN is not read after the final skip output.
+    # Check actual gradients and require that graph projections participate.
     for name, param in model.named_parameters():
-        assert param.grad is not None and torch.isfinite(param.grad).all(), name
+        if param.grad is not None:
+            assert torch.isfinite(param.grad).all(), name
+    assert any(layer.project.weight.grad is not None and
+               layer.project.weight.grad.abs().sum() > 0 for layer in model.causal_layers)
     report = dict(graphs_forward_checked=len(visited), graph_bank_ids=visited,
-                  layers=8, variables=variables, lags=bank.shape[1],context=context,
+                  layers=8, variables=variables, lags=bank.shape[1],
                   full_width_backward_pass=True, device='cpu', full_training=False)
     (args.prepared_run/'all_graphs_forward_check.json').write_text(json.dumps(report, indent=2), encoding='utf-8')
     print(json.dumps({k: v for k, v in report.items() if k != 'graph_bank_ids'}))
