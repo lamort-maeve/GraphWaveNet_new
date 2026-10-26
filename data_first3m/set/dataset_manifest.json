@@ -1,0 +1,59 @@
+{
+  "schema": 2,
+  "source": "D:\\大创\\2026\\Graph-WaveNet-master\\data\\first3m\\first3month.npz",
+  "source_sha256": "8069760e7f57f950b255ffb0fb0fb4df6a3ff8f8dc9e64bcb319d7f15c49a97c",
+  "raw_sha256": "2b9b8f15fae9a8842be6f89f4658a0d25ecc665f7819aa1a4a218c1cd5d3020b",
+  "shape": [
+    25920,
+    20,
+    3
+  ],
+  "timestamps": [
+    "2023-01-01T00:00:00",
+    "2023-03-31T23:55:00"
+  ],
+  "cadence_seconds": 300,
+  "context": 25,
+  "horizon": 12,
+  "split_protocol": "disjoint_context_and_targets",
+  "splits": {
+    "train": {
+      "start": 0,
+      "end_exclusive": 16992,
+      "samples": 16956,
+      "first_origin": 24,
+      "last_origin": 16979
+    },
+    "val": {
+      "start": 16992,
+      "end_exclusive": 21312,
+      "samples": 4284,
+      "first_origin": 17016,
+      "last_origin": 21299
+    },
+    "test": {
+      "start": 21312,
+      "end_exclusive": 25920,
+      "samples": 4572,
+      "first_origin": 21336,
+      "last_origin": 25907
+    }
+  },
+  "missing_cells": 720,
+  "imputation": "observed-mask reconstruction; past-only forward fill; no future or global statistics",
+  "graph_protocol": "frozen_train",
+  "timeline_length": 25920,
+  "discovery_cutoff": 16979,
+  "graph_window": 2016,
+  "graph_stride": 288,
+  "static_available_index": 4032,
+  "normalizer": "forecast loader fits only retained training prefix, never stored data_normalized",
+  "generator_sha256": "bfd4fbd9b69c708a3a2cc77ccc08eab37a094b3ae224b2fcd1c276548220d1ce",
+  "expected_graphs": 52,
+  "schedule_sha256": "5d14a8598b94792e27c5708d11128a5a98b1feedabe2a8355794af7facc193bd",
+  "split_sha256": {
+    "train": "f1c5762b44422b26d6b689297382715fddf07b766ef82e5a2b1960ff3ab539be",
+    "val": "a1feca1c4202f98ff0429093a37f9831f695e005a6330e1bf486ab66eb1feeea",
+    "test": "bea1ea5d80cf107f7019c21f58a91d4c9bbc5824ba3a7bd0aaa3cf6fcbfa7cc4"
+  }
+}

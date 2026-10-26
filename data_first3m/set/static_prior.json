@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "available_index": 4032,
+  "source_end_exclusive": 4032,
+  "matrix_sha256": "da8b0275d0f11d8e97ae398cd4776aed2f29ec147c31cc9abf7d1147c679d925",
+  "raw_sha256": "2b9b8f15fae9a8842be6f89f4658a0d25ecc665f7819aa1a4a218c1cd5d3020b",
+  "sources": [
+    {
+      "file": "graph_0000.npz",
+      "sha256": "3f2d5ee61f9fe992a664b9d096daad91a2307623524821e0fe0bb653ab0da9e3"
+    },
+    {
+      "file": "graph_0001.npz",
+      "sha256": "4728ad0e1ce1bfc7b9b591d702261e639498c20b9131ec799568d5f577e8e2d6"
+    },
+    {
+      "file": "graph_0002.npz",
+      "sha256": "c8b374344d08b31d5dfbc8dd5ca214c9caedbd3603690cce880637d4d36e1475"
+    },
+    {
+      "file": "graph_0003.npz",
+      "sha256": "4fc4d3518ee1e9109bc165fa6f52aa6b6684e94afb37d8d4f18316bde17e4011"
+    },
+    {
+      "file": "graph_0004.npz",
+      "sha256": "35b576aaf64dc0e816ffa2bb56fe1a38cbd356d155f69c965ef01aa2ce190878"
+    },
+    {
+      "file": "graph_0005.npz",
+      "sha256": "e56a1213b83fd71ae4173c9b891a532c56cf4b6913ec7dde46bdffd4d322d2c5"
+    },
+    {
+      "file": "graph_0006.npz",
+      "sha256": "605d7074284a760521a6afcad2e641a023219e7e3e5e14fd41fee6bfef75b900"
+    },
+    {
+      "file": "graph_0007.npz",
+      "sha256": "b489886e730114567be3138866ce314238069d745cac1a5ba35ceb0df2af9f63"
+    }
+  ],
+  "alpha": 0.05,
+  "weighting": "confidence",
+  "aggregation": "mean_window_and_nonzero_lag"
+}

@@ -1,0 +1,20 @@
+{
+  "raw_sha256": "2b9b8f15fae9a8842be6f89f4658a0d25ecc665f7819aa1a4a218c1cd5d3020b",
+  "dataset_manifest_sha256": "438d1ab51a3dcc389e087b0862d61362afd3509bb2b938c7b64ea2e5c65ca6c6",
+  "tau_min": 1,
+  "tau_max": 12,
+  "pc_alpha": 0.05,
+  "alpha": 0.05,
+  "max_conditions": 3,
+  "max_combinations": 1,
+  "fdr": "BH across all source,target,lag>=1 tests within each window",
+  "imputation": "observed-mask reconstruction; past-only forward fill; no future or global statistics",
+  "protocol": "frozen_train",
+  "discovery_cutoff": 16979,
+  "tigramite": "5.2.10.1",
+  "numpy": "2.5.4",
+  "scipy": "1.18.1",
+  "engine_sha256": "3a9e280f22fe320eef3b6960065747d04aa040abcd92800325f228559571898e",
+  "runner_sha256": "3ee78876803cfccf6e856f48c677f170a102f8053ea11f785c2fb89145305672",
+  "protocol_sha256": "92b510d5eeb79454a112134f3f8d768ad4d1ef8a095d67ac3b302fc04c9c475b"
+}

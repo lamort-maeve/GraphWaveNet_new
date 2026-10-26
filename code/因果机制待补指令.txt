@@ -1,0 +1,265 @@
+因果机制可选补实验：与半监督普适性主实验分开。
+M 已完成复用；N/O/P/Q/T 当前缺失。
+沿用当前因果构图和融合实现，只切换已有消融参数，seed=42，验证集选轮次。
+静态准备和服务器代码/输出路径同 新增实验指令.txt。
+
+
+============================================================
+N：同步读取＋静态参考
+
+python /root/autodl-tmp/newcode_ssl_general/train.py \
+  --epochs 100 \
+  --patience 10 \
+  --batch-size 16 \
+  --prepared-pilot /root/autodl-tmp/PCMCI/data/set \
+  --context 25 \
+  --train-start-index 4032 \
+  --output /root/autodl-tmp/results/ssl_general_20261026 \
+  --graph-availability frozen_train \
+  --mode combined \
+  --graph-control hybrid \
+  --graph-kernel 3 \
+  --history-padding masked \
+  --lag-normalization valid \
+  --history-init uniform \
+  --causal-revision selective \
+  --adaptive-scale 1 \
+  --label-ratio 0.25 \
+  --seed 42 \
+  --device cuda:0 \
+  --threads 7 \
+  --workers 0 \
+  --causal-execution reference \
+  --batch-fetch vectorized \
+  --history-fusion shrunk \
+  --history-uniform-mix 0.5 \
+  --ssl-method none \
+  --static-fusion gated_residual \
+  --static-weight 0.5 \
+  --lag-readout synchronous \
+  --history-weight-sharing per_lag \
+  --dynamic-message-scale 1 \
+  --hidden 32 \
+  --blocks 4 \
+  --layers 2 \
+  --dropout 0.3 \
+  --learning-rate 0.001 \
+  --weight-decay 0.0001 \
+  --lr-patience 5 \
+  --graph-weighting confidence \
+  --alpha 0.05 \
+  --variables all \
+  --static-matrix /root/autodl-tmp/PCMCI/data/set/static_prior.npz \
+  --static-provenance /root/autodl-tmp/PCMCI/data/set/static_prior.json \
+  --static-available-index 4032 \
+  --static-control real \
+  --run-name general_N_s42 \
+  --skip-test
+
+
+============================================================
+O：跨 lag 共享历史权重
+
+python /root/autodl-tmp/newcode_ssl_general/train.py \
+  --epochs 100 \
+  --patience 10 \
+  --batch-size 16 \
+  --prepared-pilot /root/autodl-tmp/PCMCI/data/set \
+  --context 25 \
+  --train-start-index 4032 \
+  --output /root/autodl-tmp/results/ssl_general_20261026 \
+  --graph-availability frozen_train \
+  --mode combined \
+  --graph-control hybrid \
+  --graph-kernel 3 \
+  --history-padding masked \
+  --lag-normalization valid \
+  --history-init uniform \
+  --causal-revision selective \
+  --adaptive-scale 1 \
+  --label-ratio 0.25 \
+  --seed 42 \
+  --device cuda:0 \
+  --threads 7 \
+  --workers 0 \
+  --causal-execution reference \
+  --batch-fetch vectorized \
+  --history-fusion shrunk \
+  --history-uniform-mix 0.5 \
+  --ssl-method none \
+  --static-fusion gated_residual \
+  --static-weight 0.5 \
+  --lag-readout aligned \
+  --history-weight-sharing shared \
+  --dynamic-message-scale 1 \
+  --hidden 32 \
+  --blocks 4 \
+  --layers 2 \
+  --dropout 0.3 \
+  --learning-rate 0.001 \
+  --weight-decay 0.0001 \
+  --lr-patience 5 \
+  --graph-weighting confidence \
+  --alpha 0.05 \
+  --variables all \
+  --static-matrix /root/autodl-tmp/PCMCI/data/set/static_prior.npz \
+  --static-provenance /root/autodl-tmp/PCMCI/data/set/static_prior.json \
+  --static-available-index 4032 \
+  --static-control real \
+  --run-name general_O_s42 \
+  --skip-test
+
+
+============================================================
+P：均匀历史＋静态参考
+
+python /root/autodl-tmp/newcode_ssl_general/train.py \
+  --epochs 100 \
+  --patience 10 \
+  --batch-size 16 \
+  --prepared-pilot /root/autodl-tmp/PCMCI/data/set \
+  --context 25 \
+  --train-start-index 4032 \
+  --output /root/autodl-tmp/results/ssl_general_20261026 \
+  --graph-availability frozen_train \
+  --mode combined \
+  --graph-control hybrid \
+  --graph-kernel 3 \
+  --history-padding masked \
+  --lag-normalization valid \
+  --history-init uniform \
+  --causal-revision selective \
+  --adaptive-scale 1 \
+  --label-ratio 0.25 \
+  --seed 42 \
+  --device cuda:0 \
+  --threads 7 \
+  --workers 0 \
+  --causal-execution reference \
+  --batch-fetch vectorized \
+  --history-fusion uniform \
+  --history-uniform-mix 0.5 \
+  --ssl-method none \
+  --static-fusion gated_residual \
+  --static-weight 0.5 \
+  --lag-readout aligned \
+  --history-weight-sharing per_lag \
+  --dynamic-message-scale 1 \
+  --hidden 32 \
+  --blocks 4 \
+  --layers 2 \
+  --dropout 0.3 \
+  --learning-rate 0.001 \
+  --weight-decay 0.0001 \
+  --lr-patience 5 \
+  --graph-weighting confidence \
+  --alpha 0.05 \
+  --variables all \
+  --static-matrix /root/autodl-tmp/PCMCI/data/set/static_prior.npz \
+  --static-provenance /root/autodl-tmp/PCMCI/data/set/static_prior.json \
+  --static-available-index 4032 \
+  --static-control real \
+  --run-name general_P_s42 \
+  --skip-test
+
+
+============================================================
+Q：单快照＋静态参考
+
+python /root/autodl-tmp/newcode_ssl_general/train.py \
+  --epochs 100 \
+  --patience 10 \
+  --batch-size 16 \
+  --prepared-pilot /root/autodl-tmp/PCMCI/data/set \
+  --context 25 \
+  --train-start-index 4032 \
+  --output /root/autodl-tmp/results/ssl_general_20261026 \
+  --graph-availability frozen_train \
+  --mode combined \
+  --graph-control hybrid \
+  --graph-kernel 1 \
+  --history-padding masked \
+  --lag-normalization valid \
+  --history-init uniform \
+  --causal-revision selective \
+  --adaptive-scale 1 \
+  --label-ratio 0.25 \
+  --seed 42 \
+  --device cuda:0 \
+  --threads 7 \
+  --workers 0 \
+  --causal-execution reference \
+  --batch-fetch vectorized \
+  --history-fusion learned \
+  --history-uniform-mix 0.5 \
+  --ssl-method none \
+  --static-fusion gated_residual \
+  --static-weight 0.5 \
+  --lag-readout aligned \
+  --history-weight-sharing per_lag \
+  --dynamic-message-scale 1 \
+  --hidden 32 \
+  --blocks 4 \
+  --layers 2 \
+  --dropout 0.3 \
+  --learning-rate 0.001 \
+  --weight-decay 0.0001 \
+  --lr-patience 5 \
+  --graph-weighting confidence \
+  --alpha 0.05 \
+  --variables all \
+  --static-matrix /root/autodl-tmp/PCMCI/data/set/static_prior.npz \
+  --static-provenance /root/autodl-tmp/PCMCI/data/set/static_prior.json \
+  --static-available-index 4032 \
+  --static-control real \
+  --run-name general_Q_s42 \
+  --skip-test
+
+
+============================================================
+T：同步读取、无静态参考
+
+python /root/autodl-tmp/newcode_ssl_general/train.py \
+  --epochs 100 \
+  --patience 10 \
+  --batch-size 16 \
+  --prepared-pilot /root/autodl-tmp/PCMCI/data/set \
+  --context 25 \
+  --train-start-index 4032 \
+  --output /root/autodl-tmp/results/ssl_general_20261026 \
+  --graph-availability frozen_train \
+  --mode combined \
+  --graph-control dynamic \
+  --graph-kernel 3 \
+  --history-padding masked \
+  --lag-normalization valid \
+  --history-init uniform \
+  --causal-revision selective \
+  --adaptive-scale 1 \
+  --label-ratio 0.25 \
+  --seed 42 \
+  --device cuda:0 \
+  --threads 7 \
+  --workers 0 \
+  --causal-execution reference \
+  --batch-fetch vectorized \
+  --history-fusion shrunk \
+  --history-uniform-mix 0.5 \
+  --ssl-method none \
+  --static-fusion convex \
+  --static-weight 0 \
+  --lag-readout synchronous \
+  --history-weight-sharing per_lag \
+  --dynamic-message-scale 1 \
+  --hidden 32 \
+  --blocks 4 \
+  --layers 2 \
+  --dropout 0.3 \
+  --learning-rate 0.001 \
+  --weight-decay 0.0001 \
+  --lr-patience 5 \
+  --graph-weighting confidence \
+  --alpha 0.05 \
+  --variables all \
+  --run-name general_T_s42 \
+  --skip-test

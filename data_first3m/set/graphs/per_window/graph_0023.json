@@ -1,0 +1,10 @@
+{
+  "graph_slot": 23,
+  "runtime_seconds": 259.11277970000083,
+  "finite_lagged_tests": 43200,
+  "significant_flow_target_variable_edges": 2327,
+  "significant_node_edges": 356,
+  "top_k_node_edges": 100,
+  "graph_path": "D:\\\u5927\u521b\\2026\\Graph-WaveNet-master\\data\\first3m\\set\\graphs\\per_window\\graph_0023.npz",
+  "edge_path": "D:\\\u5927\u521b\\2026\\Graph-WaveNet-master\\data\\first3m\\set\\graphs\\per_window\\graph_0023_edges.csv"
+}
